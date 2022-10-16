@@ -1,0 +1,201 @@
+.product {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    background: var(--global-box-background);
+    border-radius: 4px;
+    opacity: 1;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.productInfo {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.code {
+    text-align: left;
+}
+
+.msku {
+    font-size: 13px;
+}
+
+.deliveryTime {
+    position: relative;
+}
+
+.imageDiv {
+    width: 168px;
+    height: 168px;
+    background: transparent 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: auto;
+}
+
+.productImg {
+    width: 140px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+}
+
+.about h3 {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-weight: bold;
+    font-size: var(--global-h3-desktop);
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin-right: 15px;
+    max-width: 750px;
+}
+
+.info {
+    display: flex; 
+    flex-direction: row;
+}
+
+.titles {
+    display: flex; 
+    flex-direction: column;
+}
+
+.values {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 40px;
+}
+
+.values p {
+    font-family: var(--global-font-family-condensed);
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.01px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.titles p {
+    text-align: left;
+    font-family: var(--global-font-family-regular);
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.quantityInput input {
+    height: 51px;
+    background: var(--global-box-background);
+    border: 1px solid var(--global-body-color);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.closeImg::before {
+    font-family: buildclub;
+    content: "\6d";
+    font-size: var(--global-h3-desktop);
+    cursor: pointer;
+}
+
+.button {
+    composes: button_primary from '../Button/button.css';
+    margin-top: 10px;
+    min-height: 51px;
+}
+
+@media screen and (max-width: 1540px) {
+    .about h3 {
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .about h3 {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .about h3 {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 784px) {
+    .productImg {
+        margin-top: 20px;
+    }
+
+    .product {
+        padding-right: 10px;
+    }
+
+}
+@media screen and (max-width: 784px) {
+    .imageDiv {
+        text-align: center;
+    }
+    .about h3 {
+        font-size: 20px;
+        max-width: unset;
+    }
+    .product {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 343px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+    .productInfo {
+        display: block;
+        margin-left: 0;
+        padding: 16px;
+    }
+    .close {
+        position: absolute;
+        right: 10px;
+    }
+
+    .info {
+        margin-top: 18px;
+    }
+
+    .button {
+        padding: 12px 13px;
+    }
+}
+
+.instantImg {
+    max-width: 65px;
+    height: 31px;
+    width: 100%;
+}
+
+.positionedInstantImg {
+    composes: instantImg;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

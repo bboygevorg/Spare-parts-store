@@ -1,0 +1,44 @@
+.title {
+    text-align: start;
+    margin-bottom: 9px;
+}
+
+.body {
+    display: flex;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0px;
+}
+
+.text {
+    text-align: start;
+    display: block;
+    margin-top: 12px;
+}
+
+.changeBtn {
+    color: #FFDC00;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.changeBtn:hover {
+    text-decoration: underline;
+}
+
+.right {
+    margin-left: 50px;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.streetWrapper {
+    display: flex;
+}

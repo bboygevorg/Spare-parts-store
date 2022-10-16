@@ -1,0 +1,177 @@
+.root {
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.searchBtn {
+    composes: button_primary from "../../../components/Button/button.css";
+    max-width: 150px;
+}
+
+.searchModal {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topRight {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.withRemove {
+    grid-template-columns: 1fr 1fr;
+}
+
+.addFromTemplate {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 24px;
+    white-space: nowrap;
+}
+
+.removeAllButton {
+    composes: button_bordered from "../../../components/Button/button.css";
+    max-width: 240px;
+    width: 100%;
+    padding: 10px 28px;
+    height: 44px;
+}
+
+.removeAllButton span {
+    text-transform: uppercase;
+}
+
+.templatesModal {
+    max-width: 1080px;
+    width: 100%;
+    min-height: 395px;
+}
+
+.cartContent {
+    margin-top: 28px;
+}
+
+.loadingWrapper {
+    width: 60vw;
+    height: 20vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.data {
+    display: grid;
+    padding: 10px 0;
+    align-items: center;
+    column-gap: 20px;
+    padding-right: 20px;
+    grid-template-columns: 0.7fr 1.2fr 0.4fr 1.5fr 0.8fr;
+}
+
+.grandTotal {
+    display: grid;
+    grid-template-columns: 0.8fr 0.6fr;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid var(--global-button-color-dark);
+    border-radius: var(--global-border-radius-button-input);
+    padding: 10px;
+}
+
+.totalTitle {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1145px) {
+    .searchModal {
+        width: 90%;
+    }
+
+    .templatesModal {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .data {
+        grid-template-columns: 0.7fr 0.7fr 0.4fr 1.5fr 0.8fr;
+    }
+
+    .grandTotal {
+       grid-template-columns: 0.8fr 0.8fr;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .searchModal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .details {
+        margin-top: 18px;
+    }
+
+    .rowMobile {
+        display: grid;
+        row-gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .searchBtn {
+        max-width: unset;
+        margin-bottom: 20px;
+    }
+
+    .topRight {
+        grid-auto-flow: row;
+    }
+
+    .withRemove {
+        grid-template-columns: unset;
+    }
+
+    .removeAllButton {
+        max-width: unset;
+        margin-top: 16px;
+        height: 49px;
+    }
+
+    .templatesModal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .grandTotal {
+        margin-top: 20px;
+        grid-template-columns: 0.2fr 1fr;
+    }
+
+    .data {
+        display: block;
+        padding-right: 0;
+    }
+}

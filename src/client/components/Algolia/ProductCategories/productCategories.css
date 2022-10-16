@@ -1,0 +1,16 @@
+.productCategories {
+    /*font-family: var(--global-font-family-regular);*/
+    font-size: 16px;
+}
+.listItem {
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font:   16px/21px Roboto;
+}
+
+.viewMore {
+   font:  Condensed Bold 16px/21px Roboto;
+    cursor: pointer;
+    text-decoration: underline;
+}

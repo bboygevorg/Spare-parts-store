@@ -1,0 +1,1333 @@
+{
+  "0": [
+    {
+      "name": "appliances",
+      "path": "appliances",
+      "count": 342,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "automotive",
+      "path": "automotive",
+      "count": 401,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "bath",
+      "path": "bath",
+      "count": 955,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "building materials",
+      "path": "building materials",
+      "count": 1743,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "cleaning",
+      "path": "cleaning",
+      "count": 477,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "clothing & footwear",
+      "path": "clothing & footwear",
+      "count": 131,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "doors & windows",
+      "path": "doors & windows",
+      "count": 342,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electrical",
+      "path": "electrical",
+      "count": 3420,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "flooring",
+      "path": "flooring",
+      "count": 1843,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "furniture",
+      "path": "furniture",
+      "count": 62,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hardware",
+      "path": "hardware",
+      "count": 6002,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "health & wellness",
+      "path": "health & wellness",
+      "count": 20,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "heating, venting & cooling",
+      "path": "heating, venting & cooling",
+      "count": 439,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "holiday decorations",
+      "path": "holiday decorations",
+      "count": 3,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "home decor",
+      "path": "home decor",
+      "count": 3,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "how-to",
+      "path": "how-to",
+      "count": 2,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "kitchen",
+      "path": "kitchen",
+      "count": 282,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lighting",
+      "path": "lighting",
+      "count": 1158,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lumber & composites",
+      "path": "lumber & composites",
+      "count": 1096,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "outdoors",
+      "path": "outdoors",
+      "count": 3895,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "paint",
+      "path": "paint",
+      "count": 2591,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "playground sets",
+      "path": "playground sets",
+      "count": 3,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "plumbing",
+      "path": "plumbing",
+      "count": 2805,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "safety equipment",
+      "path": "safety equipment",
+      "count": 16,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "smart home",
+      "path": "smart home",
+      "count": 55,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "special values",
+      "path": "special values",
+      "count": 1,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "sports & outdoors",
+      "path": "sports & outdoors",
+      "count": 45,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "storage & organization",
+      "path": "storage & organization",
+      "count": 824,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "tools",
+      "path": "tools",
+      "count": 4008,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "window treatments",
+      "path": "window treatments",
+      "count": 200,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "2": [
+    {
+      "name": "abrasives",
+      "path": "abrasives",
+      "count": 466,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "adhesives, sealants and tape",
+      "path": "adhesives, sealants and tape",
+      "count": 294,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "cleaning and janitorial",
+      "path": "cleaning and janitorial",
+      "count": 501,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electrical",
+      "path": "electrical",
+      "count": 1776,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electronics, appliances, and batteries",
+      "path": "electronics, appliances, and batteries",
+      "count": 130,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "fasteners",
+      "path": "fasteners",
+      "count": 1740,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "fleet and vehicle maintenance",
+      "path": "fleet and vehicle maintenance",
+      "count": 269,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "furniture, hospitality and food service",
+      "path": "furniture, hospitality and food service",
+      "count": 82,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hardware",
+      "path": "hardware",
+      "count": 413,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hvac and refrigeration",
+      "path": "hvac and refrigeration",
+      "count": 954,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hydraulics",
+      "path": "hydraulics",
+      "count": 58,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lab supplies",
+      "path": "lab supplies",
+      "count": 29,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lighting",
+      "path": "lighting",
+      "count": 759,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lubrication",
+      "path": "lubrication",
+      "count": 182,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "machining",
+      "path": "machining",
+      "count": 626,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "material handling",
+      "path": "material handling",
+      "count": 864,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "motors",
+      "path": "motors",
+      "count": 306,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "office supplies",
+      "path": "office supplies",
+      "count": 116,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "outdoor equipment",
+      "path": "outdoor equipment",
+      "count": 140,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "packaging & shipping",
+      "path": "packaging & shipping",
+      "count": 124,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "paint, equipment and supplies",
+      "path": "paint, equipment and supplies",
+      "count": 151,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pipe, hose, tube & fittings",
+      "path": "pipe, hose, tube & fittings",
+      "count": 249,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "plumbing",
+      "path": "plumbing",
+      "count": 1592,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pneumatics",
+      "path": "pneumatics",
+      "count": 478,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "power transmission",
+      "path": "power transmission",
+      "count": 716,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pumps",
+      "path": "pumps",
+      "count": 181,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "raw materials",
+      "path": "raw materials",
+      "count": 84,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "reference and learning supplies",
+      "path": "reference and learning supplies",
+      "count": 2,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "safety",
+      "path": "safety",
+      "count": 1922,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "security",
+      "path": "security",
+      "count": 270,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "test instruments",
+      "path": "test instruments",
+      "count": 254,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "tools",
+      "path": "tools",
+      "count": 1601,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "welding",
+      "path": "welding",
+      "count": 109,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "1": [
+    {
+      "name": "adhesives & sealants",
+      "path": "adhesives & sealants",
+      "count": 71,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "appliances",
+      "path": "appliances",
+      "count": 69,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "bathroom plumbing",
+      "path": "bathroom plumbing",
+      "count": 225,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "castings & cast iron boxes frames & covers",
+      "path": "castings & cast iron boxes frames & covers",
+      "count": 9,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "drinking fountains & bottle filling stations",
+      "path": "drinking fountains & bottle filling stations",
+      "count": 1,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electrical",
+      "path": "electrical",
+      "count": 16,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electronics",
+      "path": "electronics",
+      "count": 12,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "gauges & thermometers",
+      "path": "gauges & thermometers",
+      "count": 6,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hangers strut & fasteners",
+      "path": "hangers strut & fasteners",
+      "count": 368,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "health & personal care",
+      "path": "health & personal care",
+      "count": 1,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "heating & cooling",
+      "path": "heating & cooling",
+      "count": 77,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "institutional and utility sinks & faucets",
+      "path": "institutional and utility sinks & faucets",
+      "count": 21,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "janitorial",
+      "path": "janitorial",
+      "count": 45,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "kitchen plumbing",
+      "path": "kitchen plumbing",
+      "count": 54,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lighting & fans",
+      "path": "lighting & fans",
+      "count": 2,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "meters",
+      "path": "meters",
+      "count": 4,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "paint equipment & supplies",
+      "path": "paint equipment & supplies",
+      "count": 25,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pipe & tubing",
+      "path": "pipe & tubing",
+      "count": 123,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pipe fittings",
+      "path": "pipe fittings",
+      "count": 1859,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "plumbing parts & supplies",
+      "path": "plumbing parts & supplies",
+      "count": 888,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "pumps",
+      "path": "pumps",
+      "count": 34,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "safety & security",
+      "path": "safety & security",
+      "count": 106,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "tools",
+      "path": "tools",
+      "count": 292,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "valves",
+      "path": "valves",
+      "count": 265,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "water heaters",
+      "path": "water heaters",
+      "count": 114,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "3": [
+    {
+      "name": "conduit and fittings",
+      "path": "conduit and fittings",
+      "count": 847,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "datacom",
+      "path": "datacom",
+      "count": 23,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "electrical enclosures and boxes",
+      "path": "electrical enclosures and boxes",
+      "count": 342,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hardware",
+      "path": "hardware",
+      "count": 170,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "hvac",
+      "path": "hvac",
+      "count": 18,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "industrial controls and automation",
+      "path": "industrial controls and automation",
+      "count": 19,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "lighting",
+      "path": "lighting",
+      "count": 184,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "power distribution",
+      "path": "power distribution",
+      "count": 225,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "safety, protection and signaling",
+      "path": "safety, protection and signaling",
+      "count": 44,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "tools",
+      "path": "tools",
+      "count": 494,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "wire",
+      "path": "wire",
+      "count": 176,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "wiring devices",
+      "path": "wiring devices",
+      "count": 213,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "name": "wiring supplies",
+      "path": "wiring supplies",
+      "count": 201,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "4": [
+    {
+      "count": 74,
+      "isRefined": false,
+      "name": "bathroom",
+      "path": "bathroom",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 96,
+      "isRefined": false,
+      "name": "hardware",
+      "path": "hardware",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 13,
+      "isRefined": false,
+      "name": "heating & cooling",
+      "path": "heating & cooling",
+      "exhaustive": true,
+      "data": null
+    }, 
+    {
+      "count": 3,
+      "isRefined": false,
+      "path": "home decor",
+      "name": "home decor",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 5,
+      "isRefined": false,
+      "name": "kitchen",
+      "parh": "kitchen",
+      "exhaustive": true,
+      "data": null
+    }, {
+      "count": 113,
+      "isRefined": false,
+      "name": "lighting & ceiling fans",
+      "path": "lighting & ceiling fans",
+      "exhaustive": true,
+      "data": null
+    }, 
+    {
+      "count": 92,
+      "isRefined": false,
+      "name": "plumbing",
+      "path": "plumbing",
+      "exhaustive": true,
+      "data": null
+    }, 
+    {
+      "count": 103,
+      "isRefined": false,
+      "name": "storage & organization",
+      "path": "storage & organization",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 501,
+      "isRefined": false,
+      "name": "tools",
+      "path": "tools",
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "5": [
+    {
+      "count": 21,
+      "isRefined": false,
+      "name": "automotive, rv and marine",
+      "path": "automotive, rv and marine",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 99,
+      "isRefined": false,
+      "name": "building supplies",
+      "path": "building supplies",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 106,
+      "isRefined": false,
+      "name": "hardware",
+      "path": "hardware",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 60,
+      "isRefined": false,
+      "name": "heating and cooling",
+      "path": "heating and cooling",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 226,
+      "isRefined": false,
+      "name": "home and decor",
+      "path": "home and decor",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 133,
+      "isRefined": false,
+      "name": "lawn and garden",
+      "path": "lawn and garden",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 36,
+      "isRefined": false,
+      "name": "lighting and electrical",
+      "path": "lighting and electrical",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 44,
+      "isRefined": false,
+      "name": "outdoor living",
+      "path": "outdoor living",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 131,
+      "isRefined": false,
+      "name": "paint and supplies",
+      "path": "paint and supplies",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 75,
+      "isRefined": false,
+      "name": "plumbing",
+      "path": "plumbing",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 22,
+      "isRefined": false,
+      "name": "storage and organization",
+      "path": "storage and organization",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 47,
+      "isRefined": false,
+      "name": "tools",
+      "path": "tools",
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "6": [
+    {
+      "count": 29,
+      "isRefined": false,
+      "name": "automotive, rv and marine",
+      "path": "automotive, rv and marine",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 122,
+      "isRefined": false,
+      "name": "building supplies",
+      "path": "building supplies",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 190,
+      "isRefined": false,
+      "name": "hardware",
+      "path": "hardware",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 73,
+      "isRefined": false,
+      "name": "heating and cooling",
+      "path": "heating and cooling",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 76,
+      "isRefined": false,
+      "name": "home and decor",
+      "path": "home and decor",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 60,
+      "isRefined": false,
+      "name": "lawn and garden",
+      "path": "lawn and garden",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 184,
+      "isRefined": false,
+      "name": "lighting and electrical",
+      "path": "lighting and electrical",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 9,
+      "isRefined": false,
+      "name": "outdoor living",
+      "path": "outdoor living",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 116,
+      "isRefined": false,
+      "name": "paint and supplies",
+      "path": "paint and supplies",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 42,
+      "isRefined": false,
+      "name": "plumbing",
+      "path": "plumbing",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 14,
+      "isRefined": false,
+      "name": "storage and organization",
+      "path": "storage and organization",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 85,
+      "isRefined": false,
+      "name": "tools",
+      "path": "tools",
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "7": [
+    {
+      "count": 101,
+      "isRefined": false,
+      "name": "air distribution",
+      "path": "air distribution",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 5,
+      "isRefined": false,
+      "name": "commercial hvac equipment",
+      "path": "commercial hvac equipment",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 79,
+      "isRefined": false,
+      "name": "components",
+      "path": "components",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 20,
+      "isRefined": false,
+      "name": "compressors",
+      "path": "compressors",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 49,
+      "isRefined": false,
+      "name": "controls",
+      "path": "controls",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 45,
+      "isRefined": false,
+      "name": "electrical",
+      "path": "electrical",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 54,
+      "isRefined": false,
+      "name": "indoor air quality & filters",
+      "path": "indoor air quality & filters",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 230,
+      "isRefined": false,
+      "name": "installation & maintenance supplies",
+      "path": "installation & maintenance supplies",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1,
+      "isRefined": false,
+      "name": "mini split equipment",
+      "path": "mini split equipment",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 65,
+      "isRefined": false,
+      "name": "motors",
+      "path": "motors",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 153,
+      "isRefined": false,
+      "name": "residential hvac equipment",
+      "path": "residential hvac equipment",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 18,
+      "isRefined": false,
+      "name": "thermostats & accessories",
+      "path": "thermostats & accessories",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 175,
+      "isRefined": false,
+      "name": "tools & test equipment",
+      "path": "tools & test equipment",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1,
+      "isRefined": false,
+      "name": "ventilation",
+      "path": "ventilation",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 4,
+      "isRefined": false,
+      "name": "water heaters",
+      "path": "water heaters",
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "9": [
+    {
+      "name": "decoratives",
+      "path": "decoratives",
+      "count": 1033,
+      "isRefined": false,
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1692,
+      "isRefined": false,
+      "name": "featured",
+      "path": "featured",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 4786,
+      "isRefined": false,
+      "name": "installation materials",
+      "path": "installation materials",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 170,
+      "isRefined": false,
+      "name": "laminate",
+      "path": "laminate",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 105,
+      "isRefined": false,
+      "name": "other",
+      "path": "other",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 421,
+      "isRefined": false,
+      "name": "stone",
+      "path": "stone",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 910,
+      "isRefined": false,
+      "name": "tile",
+      "path": "tile",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 231,
+      "isRefined": false,
+      "name": "vinyl",
+      "path": "vinyl",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 405,
+      "isRefined": false,
+      "name": "wood",
+      "path": "wood",
+      "exhaustive": true,
+      "data": null
+    }
+  ],
+  "8": [
+    {
+      "count": 3,
+      "isRefined": false,
+      "name": "furniture, hospitality and food service",
+      "path": "furniture, hospitality and food service",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 14,
+      "isRefined": false,
+      "name": "lighting",
+      "path": "lighting",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 3,
+      "isRefined": false,
+      "name": "pipe, hose, tube & fittings",
+      "path": "pipe, hose, tube & fittings",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1676,
+      "isRefined": false,
+      "name": "safety",
+      "path": "safety",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1,
+      "isRefined": false,
+      "name": "test instruments",
+      "path": "test instruments",
+      "exhaustive": true,
+      "data": null
+    },
+    {
+      "count": 1,
+      "isRefined": false,
+      "name": "welding",
+      "path": "welding",
+      "exhaustive": true,
+      "data": null
+    }
+  ]
+}

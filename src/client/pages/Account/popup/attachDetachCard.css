@@ -1,0 +1,116 @@
+.root {
+    padding: 50px 20px 20px;
+    position: relative;
+}
+.loadingRoot {
+    position: unset;
+}
+.loadingWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 10vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.loading {
+    composes: ring from '../../../components/Loading/loading.css';
+    width: 45px;
+}
+
+.loadingWrapperRoot {
+    composes: loadingWrapper;
+    height: 50vh;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cardList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-height: 265px;
+    overflow: auto;
+    align-items: center;
+    max-width: 530px;
+}
+
+.cardList::-webkit-scrollbar {
+    width: 2px;
+    background-color: #E2E2E2;
+}
+
+.cardList::-webkit-scrollbar-thumb {
+    background-color: var(--global-button-color-dark);
+    height: 150px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #AEAEAE;
+    padding: 16px 10px 16px 16px;
+    border-radius: 6px;
+    max-width: 490px;
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.removeCard {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.addNew {
+    text-align: center;
+    cursor: pointer;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+.backIcon {
+    margin-right: 12px;
+    font-size: 15px;
+}
+
+.backIcon::before {
+    font-family: buildclub;
+    content: "\72";
+} 
+
+.remove {
+    display: flex;
+    align-items: center;
+    max-width: 95px;
+    width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding: 50px 16px 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        height: unset;
+    } 
+}

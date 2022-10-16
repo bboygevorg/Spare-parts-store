@@ -1,0 +1,41 @@
+.root {
+    text-align: justify;
+    padding: 80px 30px 40px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 0.25fr 0.02fr 1fr;
+    margin-bottom: 15px;
+}
+
+.name {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding: 80px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        margin-left: unset;
+    }
+
+    .name {
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+}

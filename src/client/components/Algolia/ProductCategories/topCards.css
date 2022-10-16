@@ -1,0 +1,168 @@
+.root {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 23px 100px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.box {
+    max-width: 385px;
+    width: 100%;
+    padding: 20px 20px 30px;
+    height: 160px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box:hover {
+    box-shadow: 0px 10px 20px #00000029;
+}
+
+.box img {
+    margin: 0 0 18px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.subLink {
+    text-transform: capitalize;
+    color: #1D1D1B;
+    line-height: 20px;
+    letter-spacing: 0.01px;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.productListLarge {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.selected {
+    box-shadow: 0px 10px 20px #00000029;
+}
+
+.filtersRoot {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.filterAndList {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog {
+    width: 524px !important;
+    height: 270px;
+}
+
+.loadingWrapper {
+    width: 60vw;
+    height: 80vh;
+}
+
+.showSubs {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.seeButton {
+    composes: button_bordered from '../../Button/button.css';
+    max-width: 194px;
+    height: 56px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.categoryTitle {
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    margin-top: 40px;
+}
+
+.buttonLabel {
+    composes: button_label from '../../Button/button.css';
+}
+
+@media screen and (max-width: 1450px) {
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+      width: 343px !important;
+      height: 214px;
+    }
+
+    .seeButton {
+        max-width: 186px;
+        height: 44px;
+    }
+
+    .buttonLabel {
+        font-size: 16px;
+    }
+
+    .box {
+        padding: 0 20px 30px;
+    }
+
+    .box img {
+        max-width: 100px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .list {
+        gap: 17px;
+    }
+
+    .subLink {
+        font-size: 14px !important;
+    }
+
+    .box {
+        justify-content: unset;
+    }
+
+    .box img {
+        max-width: 130px;
+    }
+}

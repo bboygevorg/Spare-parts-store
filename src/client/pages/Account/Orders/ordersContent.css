@@ -1,0 +1,47 @@
+.root {
+    max-width: 1100px;
+    background: #F8F8F8;
+    display: block;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.shopperView {
+    composes: header;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.section {
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #DBDBDB;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.activeBorder {
+    transition: 0.5s;
+    border-bottom: 2px solid #FFC900;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        width: auto;
+        margin: 20px auto;
+        padding: 20px 0;
+    }
+
+    .section {
+        padding: 12px 20px;
+    }
+}

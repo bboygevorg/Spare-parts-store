@@ -1,0 +1,37 @@
+.root {
+  margin-top: 18px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.navItem {
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+
+}
+.title {
+  text-decoration: underline;
+  position: relative;
+  width: max-content;
+}
+
+.navItem::after {
+  content: "/";
+  /* position: absolute; */
+  /* right: -10px; */
+  /* display: inline-block; */
+  z-index: 50;
+  padding-left: 5px;
+  text-decoration: unset;
+}
+
+.activeTitle {
+  color: #aeaeae;
+  text-decoration: unset;
+}
+
+.active::after {
+  display: none;
+}

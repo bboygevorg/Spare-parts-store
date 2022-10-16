@@ -1,0 +1,133 @@
+.slider {
+  position: relative;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*box-shadow: 0px 10px 30px rgba(21, 44, 38, 0.1);*/
+  cursor: pointer;
+  transition: 0.2s;
+  width: 46px;
+  height: 46px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  border: 1px solid #f8f8f8;
+}
+
+.arrow:hover {
+  box-shadow: 0px 10px 30px rgba(21, 44, 38, 0);
+}
+
+.arrow:hover svg {
+  fill: red;
+}
+
+.arrow svg {
+  display: block;
+  width: 50%;
+  height: auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+.arrowPrev {
+  composes: arrow;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.arrowNext {
+  composes: arrow;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+.leftIcon::before {
+  font-family: buildclub;
+  content: "\72";
+  width: 9px;
+  height: 16px;
+}
+
+.rightIcon::before {
+  font-family: buildclub;
+  content: "\73";
+  width: 9px;
+  height: 16px;
+}
+
+.customSlickDotsWrapper {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 50%;
+  display: flex !important;
+  transform: translateX(-50%);
+}
+
+.sliderCustomDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  margin: 5px;
+  color: transparent;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sliderCustomDots:after {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  content: "";
+}
+
+.sliderCustomDots:hover .sliderCustomDots:after {
+  background-color: #ff6602;
+}
+
+.customSlickDotsWrapper li[class~="slick-active"] .sliderCustomDots:after {
+  background-color: #ff6602;
+}
+
+:global .slick-slide {
+  height: unset;
+  /* margin-right: px; */
+}
+
+@media screen and (max-width: 1240px) {
+  :global .slick-list {
+    padding-right: 40%;
+     margin: 0 -16px;
+    /* overflow: visible; */
+    /* margin: 0 16px !important; */
+  }
+  :global .slick-slide {
+    margin: 0 16px;
+  }
+}
+
+/* the parent */
+
+@media screen and (max-width: 1240px) {
+    :global 
+        .slick-track {
+            display: flex;
+           /* box-sizing: border-box;
+           max-width: 100%; */
+           
+        }
+}

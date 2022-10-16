@@ -1,0 +1,42 @@
+.root {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 20px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .root {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        grid-gap: 12px;
+        justify-content: start;
+    }
+}
+
+.address {
+    justify-self: start;
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+}
+
+.backStep {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+    }
+    .tabs {
+        margin-top: 30px;
+    }
+}

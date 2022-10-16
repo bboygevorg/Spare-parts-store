@@ -1,0 +1,83 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.filterBtn {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 109px;
+    width: 100%;
+    padding: 10px 31px;
+    height: 44px;
+    margin-right: 32px;
+}
+
+.resetFilterBtn {
+    composes: button_bordered from '../../../components/Button/button.css';
+    max-width: 139px;
+    width: 100%;
+    padding: 10px 25px;
+    height: 44px;
+}
+
+.resetFilterBtn:disabled {
+    border: 1px solid #DBDBDB;
+    pointer-events: none;
+}
+
+.resetFilterBtn:disabled:hover {
+    background: transparent;
+}
+
+@media screen and (max-width: 1370px) {
+    .root {
+        align-items: flex-end;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .root {    
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filterBtn {
+        max-width: 140px;
+        margin: 20px 0;
+    }
+
+    .resetFilterBtn {
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin-top: 16px;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .filterBtn {
+        max-width: unset;
+        margin: 20px 0 16px;
+    }
+
+    .resetFilterBtn {
+        max-width: unset;
+    }
+}

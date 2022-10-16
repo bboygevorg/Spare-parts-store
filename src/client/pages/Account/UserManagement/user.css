@@ -1,0 +1,94 @@
+.rowData {
+    display: grid;
+    grid-template-columns: 1.9fr 2.2fr 1.4fr 1fr 0.5fr 1fr;
+    column-gap: 20px;
+    padding: 18px 0 2px;
+    align-items: center;
+    width: 100%;
+}
+
+.shopAdminData {
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr)) !important;
+}
+
+.role {
+    position: relative;
+}
+
+.delete {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.dropDown {
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.opened {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1470px) {
+    .name {
+        max-width: 185px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .email {
+        max-width: 240px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .rowData {
+        grid-template-columns: 1.9fr 2.2fr 1.4fr 1.5fr 0.5fr 1.6fr;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .block {
+        padding: 18px 12px 18px 16px;
+        background-color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .details {
+        margin-top: 18px;
+    }
+
+    .rowMobile {
+        display: grid;
+        row-gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .roleSelectRoot {
+        composes: root from './accountSelect.css';
+        width: 100%
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 0.1fr 2fr;
+        column-gap: 8px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}

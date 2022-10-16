@@ -1,0 +1,160 @@
+.root {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 20px;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+.content {
+    max-width: 1240px;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.filter {
+    margin-top: 31px;
+}
+
+.reports {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.loadingWrapper {
+    width: 60vw;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.load {
+    text-decoration: unset !important;
+    margin-left: unset !important;
+}
+
+.titleRow {
+    display: grid;
+    grid-template-columns: 0.8fr 1.7fr 0.7fr 0.7fr 0.6fr 0.6fr;
+    column-gap: 20px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 16px;
+}
+
+.titleRow p {
+    white-space: nowrap;
+}
+
+.pagination {
+    align-self: flex-end;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.exportIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.exportIcon p {
+    text-decoration: underline;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.grandTotal {
+    display: flex;
+    align-items: center;
+}
+
+.totalTitle {
+    margin-right: 40px;
+}
+
+.noResult {
+    margin: 60px 10px;
+}
+
+@media screen and (max-width: 1145px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .root {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        grid-gap: 12px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        padding: 16px;
+        grid-template-columns: 30% 70%;
+        grid-gap: 20px;
+    }
+
+    .tabs {
+        margin-top: 30px;
+    }
+
+    .filter {
+        margin-top: 12px;
+    }
+
+    .reports {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grandTotal {
+        margin-top: 26px;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .root {
+        padding: 16px 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+}

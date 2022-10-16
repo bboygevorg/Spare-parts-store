@@ -1,0 +1,101 @@
+.root {
+    max-width: 802px;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.root h2 {
+    text-align: center;
+}
+
+.fields {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    font-family: var(--global-font-family-regular);
+    font-size: 16px;
+    color: #1D1D1B;
+    letter-spacing: 0px;
+    border: 1px solid #AEAEAE;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: 385px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.mainDiv {
+    font-size: 16px;
+    font-family: var(--global-font-family-regular);
+    color: var(--global-label-color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.arrow {
+    transform: rotate(-180deg);
+}
+
+.customOptionsHidden {
+    display: none;
+}
+
+.customOptionsOpen {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 8px;
+    top: 38px;
+    border: 1px solid #AEAEAE;
+    left: -1px;
+    border-top: 0;
+    width: calc(100% + 2px);
+    overflow: scroll;
+    max-height: 115px;
+}
+
+.option {
+    color: #1D1D1B;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        text-align: center;
+    }
+
+    .fields {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 16px;
+    }
+
+    .select {
+        max-width: 343px;
+        justify-self: center;
+    }
+}

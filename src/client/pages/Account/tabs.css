@@ -1,0 +1,130 @@
+.item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.item span:last-child {
+    margin-left: 10px;
+}
+
+.link {
+    border-bottom: 1px solid #E2E2E2;
+    opacity: 1;
+    max-width: 385px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    text-decoration: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+    transform: scale(1.03);
+    padding-right: 13px;
+    padding-left: 4px;
+}
+
+.link:hover {
+    color: black;
+}
+
+.icons {
+    font-size: 21px;
+    color: #1D1D1B;
+    width: 30px;
+}
+
+.profileIcon::before {
+    font-family: buildclub;
+    content: "\75";
+    font-size: 20px;
+    color: #1D1D1B;
+}
+
+.orderIcon::before {
+    font-family: buildclub;
+    content: "\71";
+    font-size: 25px;
+    color: #1D1D1B;
+}
+
+.jobIcon::before {
+    font-family: buildclub;
+    content: "\44";
+    font-size: 23px;
+    color: #1D1D1B;
+}
+
+.billingIcon::before {
+    font-family: buildclub;
+    content: "\42";
+    font-size: 23px;
+    color: #1D1D1B;
+}
+
+.paymentIcon::before {
+    font-family: buildclub;
+    content: "\70";
+    font-size: 27px;
+    margin-left: -4px;
+    color: #1D1D1B;
+}
+
+.cartIcon::before {
+    font-family: buildclub;
+    content: "\67";
+    font-size: 20px;
+    color: #1D1D1B;
+}
+
+.icon::before {
+    font-family: buildclub;
+    content: "\73";
+    color: #E2E2E2;
+    display: none;
+}
+
+.signOutIcon::before {
+    font-family: buildclub;
+    content: "\43";
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1100px) {
+    .title {
+        display: none;
+    }
+
+    .link {
+        max-width: 50px;
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .icon::before {
+        display: block;
+    }
+
+    .title {
+        display: block;
+    }
+
+    .link {
+        max-width: 385px;
+        justify-content: space-between;
+    }
+}

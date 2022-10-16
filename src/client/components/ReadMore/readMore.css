@@ -1,0 +1,162 @@
+.root {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    background: var(--global-box-background);
+    border-radius: 20px;
+    opacity: 1;
+    padding: 58px 0 60px 30px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1365px) {
+    .root  {
+        display: block;
+    }
+    .specifications {
+        margin-top: 32px;
+    }
+}
+
+.description {
+   flex: 1.5;
+}
+
+.title {
+    width: 100%;
+    max-width: 197px;
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-h3-desktop);
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.01px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+}
+
+.desc {
+    width: 100%;
+    max-width: 772px;
+    text-align: left;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    padding-top: 15px;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.onlySpecifications {
+    composes: specifications;
+    flex: 0.5;
+    margin-top: 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+}
+
+.featureName {
+    flex: 1;
+    text-align: left;
+    font-family: var(--global-font-family-roboto);
+    font-size: var(--global-px-font-size);
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    padding-bottom: 12px;
+    word-break: break-word;
+    text-transform: capitalize;
+}
+
+.specifications_title {
+    width: 100%;
+    /* max-width: 137px; */
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-h3-desktop);
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.01px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin-bottom: 13px;
+}
+
+.specifications p {
+    text-align: left;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin: 6px;
+}
+
+.readmore {
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 0.01px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.specifications h2 {
+    text-align: left;
+    text-decoration: underline;
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-p-font-size);
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.01px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.values {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.values p {
+    text-align: left;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin-bottom: 9px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding-left: 12px;
+        padding-top: 22px;
+        padding-right: 20px;
+    }
+
+    .desc {
+        padding-top: 16px;
+    }
+
+    .featureName {
+        padding-bottom: 14px;
+    }
+    .specifications_title {
+        margin-bottom: 26px;
+    }
+}

@@ -1,0 +1,84 @@
+.root {
+    margin-bottom: 12px;
+}
+
+.inCheckoutRoot {
+    margin-bottom: 0;
+}
+
+.checkBox_label {
+    position: relative;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.labelForCheckout {
+    composes: checkBox_label;
+    align-items: unset;
+}
+
+.inSignUp_label {
+    padding-left: 24px;
+}
+
+/* для элемента input c type="checkbox" */
+.checkBox_label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.checkBox_label > span {
+    display: block;
+    user-select: none;
+    color: var(--global-label-color-dark);
+    text-transform: capitalize;
+}
+
+.checkboxCircle {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #A2A2A2;
+}
+
+.checkboxCircleForCheckout {
+    composes: checkboxCircle;
+    border-radius: 6px;
+    border: 1px solid #AEAEAE;
+    width: 22px;
+    height: 22px;
+}
+
+.checkboxCircleForCheckout img {
+   display: none;
+}
+
+.checkboxCircle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+}
+.checkBox_label > input:checked  + .checkboxCircle{
+    border-color: var(--global-button-color-light);
+}
+
+.checkBox_label > input:checked  + .checkboxCircle span{
+    background-color: var(--global-button-color-light);
+}
+
+.checkBox_label > input:checked  + .checkboxCircleForCheckout img{
+    display: block;
+    position: absolute;
+    left: 3;
+    top: 5;
+}

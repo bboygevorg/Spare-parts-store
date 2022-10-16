@@ -1,0 +1,64 @@
+.Accordion {
+  color: var(--mainColor);
+  border-radius: var(--global-border-radius);
+  max-width: 385px;
+  width: 100%;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 784px) {
+  .Accordion {
+    max-width: unset;
+  }
+}
+
+.fromHeaderAccordion {
+  color: var(--mainColor);
+  border-radius: var(--global-border-radius);
+  max-width: 93%;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #E2E2E2;
+  margin: 0 auto;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #f8f8f8;
+  padding: 12px 20px;
+}
+
+.fromHeaderHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0 16px 0;
+}
+
+.Opened {
+  transition: 0.3s;
+}
+
+.Closed {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.Component {
+  padding: 12px 20px 20px;
+}
+
+.fromHeaderComponent {
+  padding: 4px 0 1px;
+}

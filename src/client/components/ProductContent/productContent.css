@@ -1,0 +1,637 @@
+.root {
+    width: 1636px;
+    height: 1850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+    max-width: 1636px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1280px) {
+    .main {
+        display: block;
+
+    }
+    .description {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+}
+
+.productCarousel {
+    position: relative;
+    display: flex;
+    flex: 1.5;
+}
+
+.thumbnails {
+    position: relative;
+    width: fit-content;
+    max-height: 444px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: auto;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+.thumbnails::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail {
+    background: var(--global-box-background);
+    width: 107px;
+    height: 99px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    opacity: 0.5;
+    border: 0px;
+    padding: 13px 0;
+    min-height: 99px;
+}
+
+.thumbnail img {
+    width: 83px;
+    height: 74px;
+    object-fit: contain;
+}
+
+.thumbnail[class*="carousel__dot--selected"] {
+    opacity: 1;
+    background: #FFFFFF !important;
+}
+
+.slider {
+    width: 100%;
+    max-height: 742px;
+    border-radius: 20px;
+}
+
+.slider > div > ul {
+    display: flex;
+}
+
+.currentSlide {
+    width: 100%;
+    /* height: 100%; */
+    background: var(--global-box-background);
+    cursor: pointer;
+    padding: 85px 0;
+    box-sizing: border-box;
+}
+
+.sliderWrapper {
+    position: relative;
+}
+
+.brand {
+    composes: brand from '../ProductCarousel/productCarousel.css';
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+}
+
+.brandSpan {
+    composes: brandSpan from '../ProductCarousel/productCarousel.css';
+}
+
+.brandImg {
+    max-width: 124px;
+    height: 29px;
+}
+
+.mainSlider {
+    position: relative;
+    margin-left: 32px;
+    margin-right: 32px;
+    flex: 2;
+    max-width: 802px;
+}
+
+.wishlist {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+}
+
+.wishlistTrigger::before {
+    font-family: buildclub;
+    color: #A2A2A2;
+    content: "\68";
+    font-size: var(--global-h3-desktop);
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.image {
+    width: 60%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.backBtn {
+    width: 100%;
+    max-width: 46px;
+    height: 46px;
+    background: var(--global-box-background);
+    border: 1px solid #F8F8F8;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.nextBtn {
+    composes: backBtn;
+}
+
+.nextBtn:focus {
+    outline: none;
+}
+
+.backBtn:focus {
+    outline: none;
+}
+
+.leftIcon::before {
+    font-family: buildclub;
+    content: "\72";
+    width: 9px;
+    height: 16px;
+}
+
+.rightIcon::before {
+    font-family: buildclub;
+    content: "\73";
+    width: 9px;
+    height: 16px;
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    max-width: 663px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.descTitle {
+    text-align: left;
+    letter-spacing: 0.01px;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+.code {
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 12px;
+}
+
+.codeTitle {
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 12px;
+    float: left;
+    margin-right: 5px;
+}
+
+.cost {
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 29px;
+    float: left;
+}
+
+.addToCard {
+    width: 100%;
+    max-width: 502px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
+
+@media screen and (max-width: 1360px) {
+    .addToCard {
+        display: block;
+    }
+
+    .button_Input_Div {
+        padding-top: 16px;
+    }
+
+    .button_component {
+        margin-top: 16px
+    }
+}
+
+.qty {
+    margin-top: 16px;
+    margin-right: 16px;
+    text-align: left;
+    letter-spacing: 0.01px;
+}
+
+.button_Input_Div {
+    display: flex;
+    flex-direction: row;
+    max-width: 340px;
+}
+
+.button_component {
+    composes: button_primary from '../Button/button.css';
+    width: 100%;
+    max-width: 220px;
+    min-height: 56px;
+}
+
+.errorMessage{
+    color: var(--global-error-color);
+    text-align: center;
+}
+
+.quantityInput {
+    margin-right: 15px;
+    position: relative;
+}
+
+.quantityInput input {
+    /* composes: input from '../QuantityInput/quantityInput.css'; */
+    width: 100%;
+    max-width: 220px;
+    min-height: 56px;
+    border: 1px solid #E2E2E2;
+}
+
+.desc {
+    max-height: 240px;
+    text-align: left;
+    letter-spacing: 0px;
+    overflow: hidden;
+}
+
+.readmore {
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 0.01px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.carousel {
+}
+
+.hitRating::before {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    font-family: buildclub;
+    color: #A2A2A2;
+    content: "\6f";
+    font-size: var(--global-h3-desktop);
+}
+  
+.inWishList::before {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    font-family: buildclub;
+    content: "\6f";
+    font-size: var(--global-h3-desktop);
+    color: var(--global-button-color-light);
+}
+
+.contentSlideDiv {
+    min-height: 572px;
+}
+
+@media screen and (max-width: 1640px) {
+    .contentSlideDiv {
+        min-height: 540px;
+    }
+}
+
+
+@media screen and (max-width: 1560px) {
+    .contentSlideDiv {
+        min-height: 490px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contentSlideDiv {
+        min-height: 430px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contentSlideDiv {
+        min-height: 520px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contentSlideDiv {
+        min-height: 420px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contentSlideDiv {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contentSlideDiv {
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contentSlideDiv {
+        min-height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .contentSlideDiv {
+        min-height: 230px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .productCarousel {
+        flex-direction: column-reverse;
+    }
+
+    .thumbnails {
+        flex-direction: row;
+        max-width: 340px;
+        padding-top: 16px;
+        width: 95%;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .thumbnail {
+        width: 73px;
+        height: 68px;
+        margin-right: 16px;
+        padding: 9px 8px;
+    }
+
+    .thumbnail img {
+        width: 57px;
+        height: 50px;
+    }
+
+    .mainSlider {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 343px;
+    }
+
+    .main {
+        padding: 20px 0px 40px 0px;
+        box-sizing: border-box;
+    }
+    
+    .currentSlide {
+        padding: 20px 46px;
+        min-height: 263px;
+    }
+
+    .nextBtn {
+         width: 100%;
+        max-width: 30px;
+        height: 30px;
+    }
+
+    .backBtn {
+        width: 100%;
+        max-width: 30px;
+        height: 30px;
+    }
+
+    .button_component {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .quantityInput {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .quantityInput input {
+        width: 100%;
+        max-width: 218px;
+    }
+
+    .qty {
+        margin-right: 55px;
+        max-width: 67px;
+        width: 100%;
+    }
+
+    .descTitle {
+        margin-bottom: 0px;
+    }
+
+    .readmore {
+        margin-top: 22px;
+    }
+
+    .delivery {
+        margin-top: 32px;
+    }
+
+    .contentSlideDiv {
+        min-height: 223px;
+    }
+
+    .image {
+        margin-top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .brand {
+        top: 16px;
+        left: 16px;
+    }
+
+    .wishlist {
+        right: 6px;
+        top: 0;
+    }
+
+    .brandImg {
+        max-width: 94px;
+        height: 22px;
+    }
+}
+
+.loadingWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hiddenDesc {
+    visibility: hidden;
+    position: fixed;
+    z-index: -1;
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-px-font-size);
+    line-height: var(--global-line-height-second);
+    font-family: var(--global-font-family-regular);
+    width: 654.41px;
+    top: 0;
+}
+
+.dialog {
+    max-width: 802px;
+  }
+
+@media screen and (max-width: 840px) {
+    .dialog {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        max-width: 343px;
+        height: auto;
+        border-radius: 10px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
+
+.declineDialog {
+    max-width: 524px;
+    height: 270px;
+    padding: 20px 40px;
+}
+  
+@media screen and (max-width: 650px) {
+    .declineDialog {
+        max-width: 343px;
+        height: 240px;
+        border-radius: 10px;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+}
+
+.hiddenLink {
+    display: none;
+}
+
+.estimateDelivery {
+    margin-top: 30px;
+}
+
+.estimateDelivery h3 {
+    margin-bottom: 16px;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.instant {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+@media screen and (max-width: 784px) {
+    .instant {
+        bottom: 16px;
+        left: 16px;
+    }
+}
+
+.instantImg {
+    max-width: 100px;
+    height: 36px;
+}
+
+
+@media screen and (max-width: 784px) {
+    .instantImg {
+        max-width: 80px;
+    }
+}
+
+.zipcodeModal {
+    max-width: 400px;
+    height: 280px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 650px) {
+    .zipcodeModal {
+        max-width: 343px;
+        height: 350px;
+        border-radius: 10px;
+        padding: 50px 16px;
+        box-sizing: border-box;
+    }
+}
+
+.wishListModal {
+    max-width: 802px;
+}
+
+@media screen and (max-width: 845px) {
+    .wishListModal {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wishListModal {
+        max-width: 600px;
+    }
+}
+  
+@media screen and (max-width: 650px) {
+    .wishListModal {
+        max-width: 343px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+}

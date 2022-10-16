@@ -1,0 +1,104 @@
+.carouselWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.products {
+    width: 100%;
+    min-height: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 894px){
+    .products{
+        min-height: 312px;
+    }
+}
+
+.products ul {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.products a {
+    width: 25%;
+}
+
+.productBox {
+    composes: productBox from '../ProductCard/productCard.css';
+}
+
+.positionedProductBox {
+    composes: productBox;
+    position: relative;
+}
+
+@media screen and (max-width: 484px) {
+    .productBox {
+        width: 95%;
+    }
+
+    .positionedProductBox {
+        width: 95%;
+    }
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nextBtn {
+    /*!*position: absolute;*!*/
+    /*top: 50%;*/
+    /*right: 0;*/
+    width: 46px;
+    height: 46px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: 1px solid #F8F8F8;
+}
+
+.backBtn {
+    composes: nextBtn;
+    /*left: -15px;*/
+}
+
+.nextBtn:focus {
+    outline: none;
+}
+
+.backBtn:focus {
+    outline: none;
+}
+
+.leftIcon::before {
+    font-family: buildclub;
+    content: "\72";
+    width: 9px;
+    height: 16px;
+}
+
+.rightIcon::before {
+    font-family: buildclub;
+    content: "\73";
+    width: 9px;
+    height: 16px;
+}
+
+
+
+@media screen and (min-width: 1641px) {
+    .sliderWrapper {
+        width: 1590px!important;
+    }
+}
+
+:global #__next {
+    padding: 20px
+}

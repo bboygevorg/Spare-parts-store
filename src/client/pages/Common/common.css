@@ -1,0 +1,83 @@
+.root {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Muli", serif;
+    line-height: 1.7;
+    background: #F8F8F8;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .root {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .content {
+
+    }
+}
+
+.topCategories {
+    /* margin-top: 46px !important; */
+}
+
+.banners {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 784px) {
+    .banners {
+        display: block;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.bannerOne {
+    composes: root from '../../components/Banner/banner.css';
+    width: 57.5%;
+    min-height: 432px;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 784px) {
+    .bannerOne {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 400px;
+        margin-bottom: 16px;
+    }
+}
+
+.bannerTwo {
+    composes: root from '../../components/Banner/banner.css';
+    width: 40.5%;
+    min-height: 432px;
+}
+
+@media screen and (max-width: 784px) {
+    .bannerTwo {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 400px;
+    }
+}
+
+
+.sliderWrapper {
+    padding: unset !important;
+}
+
+.blocksWrapper {
+    margin-top: 0px!important;
+}

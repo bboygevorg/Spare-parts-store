@@ -1,0 +1,134 @@
+.title {
+    margin: 36px auto;
+}
+.title h1 {
+    color: #1D1D1B;
+    font-size: 32px;
+    text-align: center;
+}
+
+.shipmentTypes {
+    width: 524px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: auto;
+    margin-top: 16px;
+
+}
+
+.type {
+    width: 246px;
+    height: 117px;
+    margin-bottom: 32px;
+    background: transparent linear-gradient(122deg, #F5F5F5 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #F2F2F242;
+    box-sizing: border-box;
+    border-radius: 15px;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 20px 30px #00000029;
+    color: var(--global-button-color-dark);
+}
+
+.clickedType {
+    width: 246px;
+    height: 117px;
+    margin-bottom: 32px;
+    background: transparent linear-gradient(122deg, var(--global-button-color-dark) 0%, var(--global-button-color-light) 100%) 0% 0% no-repeat padding-box;
+    box-sizing: border-box;
+    border-radius: 15px;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 20px 30px #00000029;
+    color: #1D1D1B;
+}
+
+.type:hover, .clickedType:hover  {
+    background: #FFDC00;
+    color: #1D1D1B;
+}
+
+.commingSoonType:hover {
+    background: transparent linear-gradient(122deg, #F5F5F5 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    color: var(--global-button-color-dark);
+}
+
+.image_title {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.image_title_cs {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: var(--global-button-color-light);
+    opacity: 1;
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.carIcon::before {
+    font-family: buildclub;
+    content: "\61";
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 16px;
+    font-size: 100px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.suvIcon::before {
+    font-family: buildclub;
+    content: "\64";
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 16px;
+    font-size: 100px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.pickUpIcon::before {
+    font-family: buildclub;
+    content: "\63";
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 16px;
+    font-size: 100px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.flatBedIcon::before {
+    font-family: buildclub;
+    content: "\62";
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 16px;
+    font-size: 100px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.button {
+    background: transparent linear-gradient(270deg, #FFC400 0%, #FFDC00 100%) 0% 0% no-repeat padding-box;
+    max-width: 190px;
+    height: 54px;
+    border-radius: 6px;
+    margin: auto;
+}

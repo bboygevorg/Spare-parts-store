@@ -1,0 +1,50 @@
+.root {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginationItem {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.paginationArrow {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.paginationItemActive {
+    background-color: var(--global-body-color);
+}
+
+.prev svg {
+    transform: rotate(-90deg);
+}
+
+.next svg {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 784px) {
+    .paginationArrow {
+        width: 35px;
+        height: 38px;
+    }
+
+    .paginationItem {
+        width: 35px;
+        height: 38px;
+    }
+}

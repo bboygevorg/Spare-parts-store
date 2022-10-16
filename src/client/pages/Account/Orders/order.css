@@ -1,0 +1,462 @@
+.root {
+    margin-top: 15px;
+    max-width: 1100px;
+    padding: 0.5rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.openedRoot {
+    composes: root;
+    box-shadow: 0px 6px 10px #00000029;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin: 14px auto;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon span {
+    color: #000000;
+    font-size: 25px;
+}
+
+.head {
+    display: flex;
+}
+
+.price {
+    
+}
+
+.date {
+    margin-left: 60px;
+}
+
+.body {
+    display: flex;
+    margin-top: 15px;
+}
+.total {
+    letter-spacing: 0px;
+}
+.number {
+    margin-left: 19px;
+}
+
+.toggleIcon {
+    cursor: pointer;
+    transform: rotate(270deg);
+    margin-left: -15px;
+    transition: 0.5s;
+}
+
+.downArrowSymbol::before {
+    font-family: buildclub;
+    content: "\72";
+    color: #000;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 784px) {
+    .toggleIcon {
+        transform: rotate(180deg);
+        margin-left: -15px;
+    }
+}
+
+.openToggleIcon {
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-left: -15px;
+    transition: 0.5s;
+}
+
+.toggleIconSpan {
+    font-size: 25px;
+}
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 10px;
+    height: 1px;
+    background: #747474;
+    margin-top: 15px;
+}
+
+.statuses {
+    display: flex;
+    flex-direction: row;
+}
+
+.statusDiv {
+   composes: statuses;
+}
+
+.status {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #747474;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.status img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disabledStatus {
+    composes: status;
+    opacity: 0.5;
+}
+
+.disabledStatus img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.statuses span {
+    font: Regular 18px/24px Roboto;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 784px) {
+    .main {
+       margin-top: 0;
+       
+    }
+}
+
+.mainInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .mainInfo {
+        grid-template-columns: 0.5fr 1fr;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .mainInfo {
+        display: block;
+    }
+}
+
+.delDate p, .payment p, .orderNumber p {
+    font: Bold 16px/24px Roboto;
+    color: #1D1D1B;
+}
+
+.delDate {
+    display: flex;
+}
+
+.delDateValue{
+    margin-left: 70px;
+}
+
+.payment {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+}
+
+.payment span {
+    font: 16px/24px Roboto;
+    color:#1D1D1B;
+}
+
+.delAddress {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+    gap: 10px;
+}
+
+@media screen and (max-width: 784px) {
+    .delAddress {
+        margin-bottom: 15px;
+    }
+}
+
+.delTime {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+    gap: 10px;
+}
+
+.delType {
+    composes: delAddress;
+    grid-column-end: 3;
+}
+
+.orderNumber {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+}
+
+.orderNumber span {
+    font: 16px/24px Roboto;
+    color:#1D1D1B;
+}
+
+.items {
+    margin-top: 50px;
+}
+
+.itemCount {
+    font: Bold 16px/24px Roboto;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+
+}
+
+.mainItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 784px) {
+    .mainItems {
+        display: block;
+    }
+}
+
+.mainFooter {
+    margin-top: 40px;
+    display: grid;
+    grid-row-gap: 15px;
+}
+
+.orderValue, .footerDel, .footerTotal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.footerTotal p, .footerTotal span {
+    font: Bold 16px/24px Roboto;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+}
+
+
+.buttons {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    margin: 30px 0px;
+}
+
+.delivery {
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.deliveryTitle {
+    margin-right: 14px;
+}
+
+.title {
+    composes: deliveryTitle;
+}
+
+.courierInfo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    row-gap: 14px;
+    column-gap: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.totals {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalRow {
+    composes: row;
+    margin-top: 14px;
+}
+
+.attachments {
+    margin-top: 38px;
+}
+
+.attachmentsLoader {
+    transform: unset;
+    text-align: center;
+}
+
+.files {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.file {
+    margin-right: 16px;
+    max-width: 110px;
+    text-align: center;
+}
+
+.fileImg {
+    width: 74px;
+    border: 1px solid #F8F8F8;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.pdfFile {
+    width: 110px;
+    height: fit-content;
+    border: 1px solid #F8F8F8;
+    border-radius: 4px;
+    padding: 13px 6px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pdf {
+    max-width: 60px;
+    margin-bottom: 5px;
+}
+
+.size {
+    margin-top: 5px;
+    color: #393939;
+}
+
+.name {
+    color: #393939;
+    max-width: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1185px) {
+    .courierInfo {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .buttons {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .buttons button {
+        margin-top: 15px;
+    }
+
+    .delAddress {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .orderNumber {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .payment {
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 15px;
+    }
+
+    .delTime {
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 15px;
+    }
+
+    .courierInfo {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .title {
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+
+    .delivery {
+        margin-left: 32px;
+    }
+
+    .date {
+        margin-left: 30px;
+    }
+
+    .pdfFile {
+        width: 104px;
+        height: 104px;
+    }
+
+    .fileImg {
+        max-width: 104px;
+    }
+
+    .pdf {
+        max-width: 55px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .deliveryTitle {
+        font-size: 14px;
+    }
+
+    .delivery p {
+        font-size: 14px;
+    }
+}

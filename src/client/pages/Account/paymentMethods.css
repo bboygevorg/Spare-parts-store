@@ -1,0 +1,161 @@
+.root {
+    padding-top: 30px;
+    padding-right: 30px;
+ }
+
+@media screen and (max-width: 784px) {
+    .root {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding-right: 0;
+    }
+}
+ 
+.tabs {
+    width: 100%;
+    justify-self: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .body {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        grid-gap: 12px;
+        justify-content: start;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+}
+
+@media screen and (max-width: 784px) {
+    .addresses {
+        max-width: 400px;
+        padding: 5px;
+    }
+}
+
+.addCard {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    background: #F8F8F8;
+    padding-top: 28px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.title {
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+@media screen and (max-width: 784px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+.addCardButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 234px;
+    height: 54px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 784px) {
+    .addCardButton {
+        max-width: 319px;
+        height: 49px;
+    }
+}
+
+.customerCard {
+    max-width: 1192px;
+    background: #F8F8F8;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 18px;
+}
+
+.ending {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .ending {
+        font-size: 16px;
+    }
+}
+
+.exp {
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width: 784px) {
+    .exp {
+        font-size: 16px;
+    }
+    .defaultMethod {
+        font-size: 16px;
+    }
+}
+
+.deleteButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 176px;
+    height: 54px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 784px) {
+    .deleteButton {
+        max-width: 319px;
+        height: 49px;
+    }
+}
+
+.backStep {
+    margin-bottom: 30px;
+}
+
+.emptyBrand {
+    width: 60px;
+    min-height: 36px;
+    background: #FFFFFF;
+}
+
+.dialog {
+    width: 524px !important;
+    height: 270px;
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        width: 343px !important;
+        height: 214px;
+    }
+}

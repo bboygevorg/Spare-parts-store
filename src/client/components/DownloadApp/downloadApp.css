@@ -1,0 +1,63 @@
+.downloadAppPopup {
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.closedPopup {
+    display: none;
+}
+
+.popupContent {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px 10px 4px;
+}
+
+.popupContent p:first-child {
+    margin-bottom: 6px;
+}
+
+.popupButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.popupDownloadButton {
+    composes: button_primary from '../../components/Button/button.css';
+    border-radius: 12pt;
+    max-width: 116px;
+    width: 100%;
+    max-height: 34px;
+}
+
+.popupNotNowButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    border-radius: 12pt;
+    max-width: 86px;
+    width: 100%;
+    max-height: 34px;
+}
+
+.buttonLabel {
+    composes: button_labelIcon from '../../components/Button/button.css';
+    font-size: 12px;
+}
+
+.buttonRoot {
+    composes: root from '../../components/Button/button.css';
+    padding: 9px 10px;
+}
+
+.closeIcon {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.linkButton {
+    margin-right: 16px;
+}

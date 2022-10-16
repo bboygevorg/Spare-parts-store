@@ -1,0 +1,201 @@
+.title {
+    margin: 21px auto;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+:global(.customPng) {
+    height: 70px;
+    margin-top: 22px;
+}
+.title h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.title p {
+    max-width: 800px;
+}
+
+.loadingWrapper {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+
+.cardTypeHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipmentTypes {
+    max-width: 524px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 32px;
+}
+
+@media screen and (max-width: 784px) {
+    .shipmentTypes {
+        max-width: 343px;
+        grid-gap: 10px;
+    }
+}
+
+.type {
+    max-width: 246px;
+  max-height: 142px;
+  min-height: 142px;
+  background: transparent linear-gradient(122deg, #f5f5f5 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  border: 1px solid #f2f2f242;
+  box-sizing: border-box;
+  border-radius: 15px;
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0px 20px 30px #00000029;
+  color: var(--global-button-color-dark);
+  padding: 16px;
+  position: relative;
+}
+
+@media screen and (max-width: 784px) {
+    .type {
+        max-width: 164px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .type {
+        padding-right: 0;
+    }
+}
+
+.clickedType {
+    background: transparent linear-gradient(122deg, var(--global-button-color-dark) 0%, var(--global-button-color-light) 100%) 0% 0% no-repeat padding-box;
+    color: #1D1D1B;
+}
+
+.type:hover  {
+    background: #FFDC00;
+    color: #1D1D1B;
+    transition: 0.6s;
+}
+.commingSoonType {
+    background: #EBEBEB!important;
+    cursor: unset;
+}
+
+.commingSoonType:hover .customIcon {
+    fill: #ffdc00!important;
+}
+.commingSoonType:hover {
+    background: transparent linear-gradient(122deg, #F5F5F5 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    color: var(--global-button-color-dark);
+}
+
+.image_title {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+    text-transform: capitalize;
+}
+
+.image_title_cs {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: var(--global-button-color-light);
+    opacity: 1;
+}
+
+.commingSoonText {
+    color: #E2E2E2;
+}
+
+@media screen and (max-width: 784px) {
+    .desc {
+       font-size: 10px;
+    }
+}
+.icon {
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 100px;
+}
+
+.customIcon {
+    fill: #ffdc00;
+}
+
+.type:hover .customIcon {
+    fill: #1D1D1B;
+    transition: 0.6s;
+}
+
+.clickedCustom {
+    fill: #1D1D1B;
+}
+
+.carIcon::before {
+    font-family: buildclub;
+    content: "\61";
+    position: absolute;
+    bottom: 5px;
+    line-height: 0.6;
+}
+
+.suvIcon::before {
+    font-family: buildclub;
+    content: "\64";
+    position: absolute;
+    bottom: 5px;
+    line-height: 0.6;
+}
+
+.pickUpIcon::before {
+    font-family: buildclub;
+    content: "\63";
+    position: absolute;
+    bottom: 5px;
+    line-height: 0.6;
+}
+
+.flatBedIcon::before {
+    font-family: buildclub;
+    content: "\62";
+    position: absolute;
+    bottom: 5px;
+    line-height: 0.6;
+}
+
+.button {
+    width: 100%;
+    max-width: 190px;
+    height: 54px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+    .button {
+        width: 100%;
+        max-width: 343px;
+    }
+}
+
+.loadingRoot {
+    composes: root from '../../../../components/Loading/loading.css';
+    height: 100%;
+}

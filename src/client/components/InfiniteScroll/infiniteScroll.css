@@ -1,0 +1,36 @@
+.productList {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+	.productList {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.productList {
+		justify-content: center;
+	}
+}
+
+.loadingWrapper {
+	position: absolute;
+	left: 50%;
+	bottom: -35px;
+	transform: translate(-50%, -50%);
+}
+
+.dialog {
+	width: 524px !important;
+	height: 270px;
+}
+
+@media screen and (max-width: 784px) {
+	.dialog {
+		width: 343px !important;
+		height: 214px;
+	}
+}

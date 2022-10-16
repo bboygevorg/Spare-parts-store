@@ -1,0 +1,278 @@
+.root {
+    width: 100%;
+    max-width: 1636px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin-top: 0;
+    }
+}
+
+.titleLoaderDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    margin-bottom: 22px;
+}
+
+@media screen and (max-width: 784px) {
+    .titleLoaderDiv {
+        max-width: 343px;
+        margin: 20px auto;
+    }
+    
+    .loaderWrapper {
+        margin: 20px auto;
+    }
+
+}
+
+.products {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.right {
+    width: 100%;
+    max-width: 524px;
+
+    margin-left: 32px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutBox {
+    max-width: 524px;
+    padding-bottom: 20px;
+    background: var(--global-box-background);
+    border-radius: var(--global-border-radius-box);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.totals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.grandTotalWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.totalTitles {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalTitle {
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-p-font-size);
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 15px;
+}
+
+.grandTotal {
+    composes: totalTitle;
+    font-size: 24px;
+}
+
+.totalValues {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalValue {
+    font-family: var(--global-font-family-roboto);
+    font-size: var(--global-p-font-size);
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin: 15px;
+}
+
+.grandTotalValue {
+    composes: totalValue;
+    font-size: 24px;
+}
+
+.buttonCheckout {
+    width: 100%;
+    height: 54px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.buttonCheckout button {
+    width: 100%;
+}
+
+.inputError {
+    display: flex;
+    flex-direction: column;
+}
+
+.errorMessage {
+    color: var(--global-error-color);
+    font-family:  var(--global-font-family-regular);
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    padding-left: 18px;
+}
+
+.errorDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding-top: 14px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+.loaderComponent {
+    composes: ring from '../../components/Loading/loading.css';
+    bottom: 40px;
+    left: 415px;
+}
+
+.inputComponent {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    height: 54px;
+    border: 1px solid var(--global-body-color);
+}
+
+.errorInputComponent {
+    composes: inputComponent;
+    border: 1px solid #C20000;
+}
+
+.buttonApply {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    height: 54px;
+    margin-left: -2px;
+}
+
+.buttonRemove {
+    composes: button_primary from '../../components/Button/button.css';
+    height: 54px;
+}
+
+.lastViewed {
+    width: 267px;
+    height: 43px;
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-h2-desktop);
+    line-height: 43px;
+    letter-spacing: 0px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    margin-left: 700px;
+    margin-top: 76px;
+    margin-bottom: -75px;
+}
+
+.carousel {
+    width: 772px;
+    left: 14px;
+    margin-left: 25px;
+}
+
+.isEmptyMessage {
+    margin: 30px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    .right {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        display: block;
+    }
+    .products {
+        max-width: 524px;
+        margin: auto;
+    }
+    .right {
+        width: auto;
+        max-width: 343px;
+        margin: auto;
+    }
+    .enterCouponCode {
+        display: block;
+        height: auto;
+    }
+
+    .buttonApply {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+}
+
+.loaderWrapperInCheckout {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+
+.declineDialog {
+    max-width: 524px;
+    height: 270px;
+    padding: 20px 40px;
+  }
+  
+@media screen and (max-width: 650px) {
+    .declineDialog {
+        max-width: 343px;
+        height: 240px;
+        border-radius: 10px;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+}
+
+.productTypeTitle {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .productTypeTitle {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}

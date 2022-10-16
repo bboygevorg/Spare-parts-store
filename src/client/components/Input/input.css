@@ -1,0 +1,24 @@
+.input {
+    height: 45px;
+    border: 1px solid #AEAEAE;
+    border-radius: var(--global-border-radius-button-input);
+    opacity: 1;
+    box-sizing: border-box;
+    padding: 16px;
+    line-height: 1.2rem;
+    font-size: var(--global-px-font-size);
+    color: var(--global-label-color-dark);
+    font-family: var(--global-font-family-regular);
+}
+
+.input:focus {
+    background-color: var(--global-white-color);
+    outline: none;
+    color: var(--global-label-color-dark);
+}
+
+.input::placeholder {
+    color: #A2A2A2;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+}

@@ -1,0 +1,62 @@
+.switchContainer {
+
+}
+
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switchFlat + label {
+    width: 58px;
+    height: 28px;
+    border-radius: 17px;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #A2A2A2;
+}
+
+.switchFlat + label:before,
+.switchFlat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.switchFlat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: all 0.4s ease-in-out;
+}
+
+.switchFlat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: #A2A2A2;
+    border-radius: 12px;
+    transition: all 0.4s ease-in-out;
+}
+
+.switchFlat:checked + label {
+    border: 1px solid #FFC400;
+}
+
+.switchFlat:checked + label:after {
+    margin-left: 28px;
+    background-color: #FFC400;
+}

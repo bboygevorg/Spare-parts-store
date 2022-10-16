@@ -1,0 +1,111 @@
+@import "./__variables.css";
+
+* {
+	margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f45900;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+	background-color: var(--global-light-color);
+	opacity: 0;
+}
+
+body::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 3px;
+}
+
+@font-face {
+    font-family: 'indigo';
+    src:  url('/fonts/indigo.eot');
+    src:  url('/fonts/indigo.eot') format('embedded-opentype'),
+      url('/fonts/indigo.ttf') format('truetype'),
+      url('/fonts/indigo.woff') format('woff'),
+      url('/fonts/indigo.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+@font-face {
+    font-family: 'buildclub';
+    src:  url('/fonts/icons/buildclub.eot');
+    src:  url('/fonts/icons/buildclub.eot') format('embedded-opentype'),
+      url('/fonts/icons/buildclub.ttf') format('truetype'),
+      url('/fonts/icons/buildclub.woff') format('woff'),
+      url('/fonts/icons/buildclub.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src:  url('/fonts/Roboto-Regular.eot');
+    src:  url('/fonts/Roboto-Regular.eot') format('embedded-opentype'),
+      url('/fonts/Roboto-Regular.ttf') format('truetype'),
+      url('/fonts/Roboto-Regular.woff') format('woff'),
+      url('/fonts/Roboto-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src:  url('/fonts/RobotoCondensed-Bold.eot');
+    src:  url('/fonts/RobotoCondensed-Bold.eot') format('embedded-opentype'),
+      url('/fonts/RobotoCondensed-Bold.ttf') format('truetype'),
+      url('/fonts/RobotoCondensed-Bold.woff') format('woff'),
+      url('/fonts/RobotoCondensed-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed Light';
+	src:  url('/fonts/RobotoCondensed-Light.eot');
+	src:  url('/fonts/RobotoCondensed-Light.eot') format('embedded-opentype'),
+		url('/fonts/RobotoCondensed-Light.ttf') format('truetype'),
+		url('/fonts/RobotoCondensed-Light.woff') format('woff'),
+		url('/fonts/RobotoCondensed-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	text-transform: initial;
+}
+
+@font-face {
+	font-family: 'Roboto Bold';
+	src:  url('/fonts/Roboto-Bold.eot');
+	src:  url('/fonts/Roboto-Bold.eot') format('embedded-opentype'),
+	url('/fonts/Roboto-Bold.ttf') format('truetype'),
+	url('/fonts/Roboto-Bold.woff') format('woff'),
+	url('/fonts/Roboto-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	text-transform: initial;
+}
+
+@font-face {
+	font-family: 'caricon';
+	src:  url('/fonts/icons/car.eot');
+	src:  url('/fonts/icons/car.eot') format('embedded-opentype'),
+		url('/fonts/icons/car.ttf') format('truetype'),
+		url('/fonts/icons/car.woff') format('woff'),
+		url('/fonts/icons/car.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	text-transform: initial;
+}

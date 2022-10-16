@@ -1,0 +1,80 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 192px;
+    margin-top: 17px;
+    padding: 10px 10px 10px 5px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 10px;
+}
+
+.text::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.root {
+    padding: 25px 10px 20px 10px;
+}
+
+.arrivalTime {
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    padding: 5px 30px 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 784px) {
+    .buttons {
+        display: block;
+    }
+}
+
+.acceptButton {
+    composes: button_primary from '../../components/Button/button.css';
+    max-width: 246px;
+    width: 100%;
+    height: 56px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .acceptButton {
+        max-width: 343px;
+        height: 54px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+.cancelButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    max-width: 246px;
+    width: 100%;
+    height: 56px;
+}
+
+@media screen and (max-width: 784px) {
+    .cancelButton {
+        max-width: 343px;
+        height: 54px;
+    }
+}

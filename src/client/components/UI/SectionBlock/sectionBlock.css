@@ -1,0 +1,26 @@
+.root {
+    margin: 0 auto;
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 578px) {
+    .root {
+        margin-top: 42px;
+    }
+
+    .title {
+        margin-bottom: 21px;
+    }
+}

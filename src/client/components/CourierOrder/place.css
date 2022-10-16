@@ -1,0 +1,66 @@
+.root {
+    max-width: 802px;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.root h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+}
+
+.field {
+    composes: input from '../Input/input.css';
+    max-width: 385px;
+    width: 100%;
+}
+
+.errorInputComponent {
+    composes: field;
+    border: 1px solid #C20000;
+    margin-bottom: 4px;
+}
+
+.error {
+    width: 100%;
+    line-height: 19px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .fields {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 16px;
+    }
+
+    .field {
+        max-width: 343px;
+    }
+
+    .error {
+        max-width: 343px;
+        margin: 0 auto;
+    }
+}

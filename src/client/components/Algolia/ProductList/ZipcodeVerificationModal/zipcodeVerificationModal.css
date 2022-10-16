@@ -1,0 +1,45 @@
+.root {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.inputComponent {
+    composes: input from '../../../../components/Input/input.css';
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #AEAEAE;
+    margin-bottom: 20px;
+}
+
+.buttonPrimary {
+    composes: button_primary from '../../../../components/Button/button.css';
+    max-width: 300px;
+    margin-bottom: 20px;
+    height: 48px;
+}
+
+.buttonBordered {
+    composes: button_bordered from '../../../../components/Button/button.css';
+    max-width: 300px;
+    margin-bottom: 20px;
+    height: 48px;
+}
+
+.error {
+    line-height: 19px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}

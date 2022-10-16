@@ -1,0 +1,132 @@
+.root {
+    width: 100%;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .root {
+        display: block;
+    }
+}
+
+.bannerOne {
+    position: relative;
+    width: 100%;
+    max-width: 802px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 273px;
+    padding: 40px 139px;
+    box-sizing: border-box;
+    margin: 0px 32px 0px 0px;
+}
+
+.bannerTwo {
+    position: relative;
+    width: 100%;
+    max-width: 802px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 273px;
+    padding: 40px 89px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .bannerOne ,.bannerTwo {
+        max-width: unset;
+        /*margin: 0 auto;*/
+        margin-top: 32px;
+        /*width: 80%;*/
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .bannerOne, .bannerTwo {
+       padding: 30px 16px;
+        text-align: center;
+    }
+}
+
+.imageBannerOne {
+    position: relative;
+    width: 100%;
+    max-width: 91px;
+    opacity: 1;
+    padding-bottom: 28px;
+}
+
+.imageBannerTwo {
+    width: 100%;
+    max-width: 109px;
+    opacity: 1;
+    padding-bottom: 28px;
+}
+
+@media screen and (max-width: 578px) {
+    .imageBannerOne  {
+        max-width: 67px;
+    }
+
+    .imageBannerTwo {
+        max-width: 81px;
+    }
+}
+
+.expressDelivery {
+    width: 100%;
+    max-width: 190px;
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    color: #1D1D1B;
+    letter-spacing: 0.01px;
+    font-size: 23.9px;
+    padding-bottom: 13px;
+}
+
+.items {
+    width: 100%;
+    max-width: 169px;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    color: #1D1D1B;
+    letter-spacing: 0.01px;
+    opacity: 1;
+    padding-bottom: 13px;
+}
+
+.messageBannerOne {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    font-family: 'Roboto Regular';
+}
+
+.messageBannerTwo {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    font-family: 'Roboto Regular';
+}

@@ -1,0 +1,254 @@
+.root {
+    padding: 58px 86px 60px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    margin-top: 30px;
+}
+
+.itemList {
+    margin-top: 40px;
+    max-height: 450px;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.itemList::-webkit-scrollbar {
+    width: 2px;
+    background-color: #E2E2E2;
+}
+
+.itemList::-webkit-scrollbar-thumb {
+    background-color: var(--global-button-color-dark);
+    height: 150px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 0.6fr 0.7fr 1.5fr 0.6fr 0.8fr 0.5fr;
+    margin-bottom: 3px;
+    column-gap: 20px;
+}
+
+.rowData {
+    display: grid;
+    grid-template-columns: 0.6fr 0.7fr 1.5fr 0.6fr 0.8fr 0.5fr;
+    padding: 10px 0;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.imageTitle {
+    justify-self: center;
+}
+
+.pic {
+    max-width: 98px;
+    max-height: 98px;
+}
+
+.imageWrapper {
+    justify-self: center;
+}
+
+.quantityInput {
+    max-width: 118px;
+    width: 100%;
+}
+
+.quantityInput input {
+    border: 1px solid #E2E2E2;
+}
+
+.selectAll {
+    display: flex;
+}
+
+.selectAll p {
+    white-space: nowrap;
+}
+
+.totalPrice {
+    white-space: nowrap;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.addButton {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 238px;
+    height: 52px;
+    width: 100%;
+    margin-left: 32px;
+    padding: 14px 22px;
+}
+
+.addButton span {
+    text-transform: uppercase;
+}
+
+.cancelButton {
+    composes: button_bordered from '../../../components/Button/button.css';
+    max-width: 120px;
+    height: 52px;
+    width: 100%;
+    padding: 14px 20px;
+}
+
+.cancelButton span {
+    text-transform: uppercase;
+}
+
+.loadingWrapper {
+    height: 45vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1145px) {
+    .name {
+        max-width: 260px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .row {
+        grid-template-columns: 0.8fr 0.7fr 1.2fr 0.6fr 0.8fr 0.6fr;
+    }
+
+    .rowData {
+        grid-template-columns: 0.8fr 0.7fr 1.2fr 0.6fr 0.8fr 0.6fr;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .root {
+        padding: 40px 50px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .root {
+        padding: 40px 40px;
+    }
+
+    .rowData {
+       column-gap: 15px;
+    }
+
+    .row {
+        column-gap: 15px;
+    }
+
+    .row {
+        grid-template-columns: 0.8fr 0.7fr 1fr 0.6fr 0.8fr 0.6fr;
+    }
+
+    .rowData {
+        grid-template-columns: 0.8fr 0.7fr 1fr 0.6fr 0.8fr 0.6fr;
+    }
+
+    .list {
+        grid-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin-top: 33px;
+        max-height: 500px;
+        padding: 60px 16px 40px;
+    }
+
+    .rowData {
+        display: grid;
+        grid-template-columns: 0.1fr 0.5fr 3fr;
+        align-items: flex-start;
+        column-gap: 20px;
+        border-bottom: 1px solid #DBDBDB;
+        padding: 15px 0 12px;
+    }
+
+    .root::-webkit-scrollbar {
+        display: none;
+    }
+
+    .selectAll {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        max-width: unset;
+        white-space: unset;
+        margin-bottom: 8px;
+    }
+
+    .quantityInput {
+        margin: 12px 0;
+    }
+
+    .actions {
+        flex-direction: column-reverse;
+    }
+
+    .addButton {
+        margin-left: 0;
+    }
+
+    .cancelButton {
+        max-width: 238px;
+        margin-top: 12px;
+    }
+
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .root {
+        overflow: auto;
+        max-height: 600px;
+    }
+
+    .rowData {    
+       column-gap: 8px;
+    }
+    
+    .cancelButton {
+        max-width: unset;
+    }
+
+    .addButton {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .name {
+        max-width: 130px;
+        white-space: nowrap;
+    }
+}

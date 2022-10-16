@@ -1,0 +1,223 @@
+.rootWrapper {
+  min-height: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.priceIcon {
+  width: 100%;
+  max-width: 274px;
+  max-height: 290px;
+  background: transparent 0% 0% no-repeat padding-box;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  padding-top: 30px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 784px) {
+  .priceIcon {
+    padding-top: 60px;
+  }
+}
+
+.getPrice {
+  /* position: absolute; */
+  width: 100%;
+  max-width: 524px;
+  height: 54px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 175px;
+  /* transform: translateX(-50%);
+  left: 50%;
+  top: 175px; */
+}
+
+@media screen and (max-width: 784px) {
+  .getPrice {
+    max-width: 311px;
+    height: 49px;
+    top: 190px;
+  }
+}
+
+.priceTitle {
+  text-align: left;
+  line-height: 36px;
+  letter-spacing: 0.01px;
+  padding: 14px 0 16px 20px;
+}
+
+@media screen and (max-width: 784px) {
+  .priceTitle {
+    font-size: 16px;
+    padding: 16px 0 14px 16px;
+  }
+}
+
+.priceValue {
+  text-align: left;
+  font-family: var(--global-font-family-condensed);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.01px;
+  color: #1d1d1b;
+  padding: 14px 20px 16px 0;
+}
+
+@media screen and (max-width: 784px) {
+  .priceValue {
+    font-size: 16px;
+    padding: 16px 19px 14px 0;
+  }
+}
+
+.getTime {
+  /* position: absolute; */
+  width: 100%;
+  max-width: 524px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* transform: translateX(-50%);
+  left: 50%;
+  top: 245px; */
+}
+
+@media screen and (max-width: 784px) {
+  .getTime {
+    max-width: 311px;
+    top: 253px;
+  }
+}
+
+.timeTitle {
+  letter-spacing: 0.01px;
+  padding: 14px 0 16px 20px;
+}
+
+@media screen and (max-width: 784px) {
+  .timeTitle {
+    font-size: 16px;
+    padding: 16px 0 14px 16px;
+  }
+}
+
+.timeValue {
+  letter-spacing: 0.01px;
+  padding: 14px 20px 16px 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 784px) {
+  .timeValue {
+    font-size: 16px;
+    padding: 16px 19px 14px 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 65.5%;
+  margin: 0 auto; 
+  padding-bottom: 5%;
+}
+
+.buttonsAbsolute {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 840px) {
+  .buttons {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    /* padding-top: 322px; */
+    align-items: center;
+  }
+}
+
+.okButton {
+  composes: button_primary from "../../components/Button/button.css";
+  width: 100%;
+  max-width: 246px;
+  max-height: 54px;
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 784px) {
+  .okButton {
+    max-width: 311px;
+    height: 49px;
+    margin: 0;
+  }
+}
+
+.locationButton {
+  composes: button_bordered from "../../components/Button/button.css";
+  width: 100%;
+  max-width: 246px;
+  max-height: 54px;
+}
+
+@media screen and (max-width: 784px) {
+  .locationButton {
+    max-width: 311px;
+    max-height: 49px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .okButtonLabel {
+    composes: button_label from "../../components/Button/button.css";
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .locationButtonLabel {
+    composes: button_label from "../../components/Button/button.css";
+    font-size: 16px;
+  }
+}
+
+.notSupportedZip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 10px
+}
+
+.rulesWrapper {
+    width: 64%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 784px) {
+  .rulesWrapper {
+ width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.root {
+    background-image: url("../../../../public/new-page-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    position: relative;
+}
+  
+.overlay {
+    background-color: rgba(47,46,46, 0.38);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+  
+.pageTitle {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.returnWrapper {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 1.5rem;
+} 
+
+.returnsText {
+    display: flex;
+    flex-direction: column;
+}
+  
+.returnsText a {
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}

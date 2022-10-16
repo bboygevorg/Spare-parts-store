@@ -1,0 +1,153 @@
+.root {
+  background-image: url("../../../../public/new-page-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  position: relative;
+  min-height: 60vh;
+}
+
+.AccordeonWrapper {
+  background-color: rgba(255, 255, 255, 0.81);
+  padding: 5px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  background-color: rgba(47,46,46, 0.38);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+.AccordeonWrapperTitle {
+  text-align: center;
+  padding: 20px;
+  transition: 0.3;
+}
+
+.searchBar {
+  display: none;
+  width: 60px;
+  overflow: hidden;
+  transition: 0.3s;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.searchIcon svg path {
+  fill: black !important;
+}
+
+.withPointer {
+  cursor: pointer;
+}
+
+.searchBarActive {
+  display: flex;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.searchBarInput {
+  margin-left: 10px;
+  width: 100%;
+  /* transition: 0.3s; */
+}
+
+.searchBarInput input {
+  display: block;
+  /* padding-left: 0 !important; */
+  width: 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding-left: 10px;
+  background: transparent;
+}
+
+.inputActive {
+  width: 100% !important;
+  /* padding-left: 10px !important; */
+  transition: padding-left 900ms cubic-bezier(0, 0.795, 0, 1);
+}
+
+.Accordeon {
+  border-bottom: 1px solid rgba(250, 219, 1, 0.7) !important;
+  box-sizing: border-box;
+}
+
+.AccordeonTitle {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AccordeonBody {
+  /* height: 0; */ 
+  transition: 0.3s;
+  /* transform: translateY(-1rem); */ 
+}
+
+.AccordeonBody p {
+  opacity: 0;
+  /* padding: 25px; */
+  max-height: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.AccordeonOpened {
+  max-height: fit-content;
+  height: -moz-max-content;
+  height: fit-content;
+
+  padding: 15px;
+}
+
+.AccordeonOpened p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  transition-property: opacity, transform;
+  max-height: 100rem;
+  z-index: 1;
+}
+
+.emptyMessage {
+  margin-left: 10px;
+}
+
+.returnsText {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiddenLinks {
+  display: none;
+}
+
+.returnsText a {
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}

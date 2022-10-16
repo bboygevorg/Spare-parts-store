@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "allowSyntheticDefaultImports": false,
+        "baseUrl": "./",
+        "paths": {
+            "config/*": [
+                "src/client/config/*"
+            ],
+            "components/*": [
+                "src/client/components/*"
+            ],
+            "actions/*": [
+                "src/client/actions/*"
+            ],
+            "reducers/*": [
+                "src/client/reducers/*"
+            ],
+            "talons/*": [
+                "src/client/talons/*"
+            ],
+            "helper/*": [
+                "src/client/helper/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}

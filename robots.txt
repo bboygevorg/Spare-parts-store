@@ -1,0 +1,3 @@
+# Googlebot
+User-agent: Googlebot
+Disallow: /*?*

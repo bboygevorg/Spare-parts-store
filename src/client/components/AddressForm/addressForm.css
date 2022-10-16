@@ -1,0 +1,189 @@
+.root {
+    max-width: 1192px;
+    background: #F8F8F8;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.inCheckoutRoot {
+    width: 100%;
+    max-width: 837px;
+    padding: 0;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+       max-width: 343px;
+    }
+}
+
+
+
+.inCheckoutTitle {
+    text-align: center;
+}
+
+/* @media screen and (max-width: 784px) {
+    .inCheckoutTitle {
+       display: none;
+    }
+} */
+
+
+
+.title {
+   margin: 30px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@media screen and (max-width: 784px) {
+    .toggleTitle {
+        display: none;
+    }
+}
+
+.inCheckoutTitle {
+    text-align: center;
+}
+
+.inputDiv {
+    width: 100%;
+    /* height: 51px; */
+    max-width: 950px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-bottom: 20px;
+    grid-gap: 30px;
+}
+
+.inCheckoutInputDiv {
+    margin: auto;
+    margin-bottom: 20px;
+}
+.inputWithError {
+    composes: inputDiv;
+    margin-bottom: 4px;
+}
+
+.inputErrorDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 784px) {
+    .inputDiv {
+        display: block;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .inCheckoutInputDiv {
+        max-width: 343px;
+    }
+}
+
+.inputComponent {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    height: 51px;
+}
+
+@media screen and (max-width: 784px) {
+    .inputComponent {
+        margin-top: 10px;
+    }
+}
+
+.errorInput {
+    composes: inputComponent;
+    border: 1px solid #C20000;
+}
+
+.buttonComponent {
+    composes: button_primary from '../../components/Button/button.css';
+    width: 160px;
+    height: 54px;
+}
+
+@media screen and (max-width: 784px) {
+    .buttonComponent {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+.selectComponent {
+    composes: select from '../../components/Select/select.css';
+    width: 100%;
+    height: 51px;
+}
+
+
+@media screen and (max-width: 784px) {
+    .selectComponent {
+        margin-top: 10px;
+    }
+}
+
+.errorSelect {
+    composes: selectComponent;
+    border: 1px solid #C20000;
+}
+
+.buttonLoadingDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.inCheckoutBtn {
+    width: 100%;
+    justify-content: center;
+    max-width: 343px;
+    margin: auto;
+}
+
+.loadingComponent {
+    composes: ring from '../../components/Loading/loading.css';
+    top: 14px;
+    right: 10px;
+}
+
+.error{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 19px;
+    letter-spacing: 0px;
+    padding-top: 14px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+.buttonChange {
+    width: 100%;
+    max-width: 190px;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .button {
+       max-width: 343px;
+    }
+}

@@ -1,0 +1,22 @@
+.root {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    min-height: 363px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* @media screen and (max-width: 784px) {
+    .root {
+        min-height: 400px;
+        margin-top: 0;
+    }
+} */
+
+.root img {
+    width: 50%;
+}

@@ -1,0 +1,204 @@
+.root {
+    width: 100%;
+    margin: 0 auto;
+    /*height: 241px;*/
+    display: flex;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.root div {
+    flex: 1;
+}
+
+.root p {
+    width: fit-content;
+}
+
+.footerLinks:hover {
+    color: var(--global-button-color-light);
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1240px)   and (min-width: 784px) {
+    .root div {
+        flex: 0 40%;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+.footerAppLinks {
+    margin-bottom: 15px;
+}
+
+.footerLinks {
+    margin-bottom: 10px;
+}
+
+.footerTitles {
+    margin-bottom: 10px;
+}
+
+.footerTitleUrl { 
+    composes: footerTitles;
+}
+
+.footerTitleUrl:hover {
+    color: var(--global-button-color-light);
+}
+
+.app_images {
+    margin-bottom: 28px;
+}
+
+.app_images img:first-child {
+    margin-right: 12px;
+}
+
+.connectLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.connectLinks a {
+    margin-right: 15px;
+}
+
+.connectLinks img {
+    width: 24px;
+    height: 24px;
+}
+
+.linkedin {
+    margin-left: 5px;
+}
+
+.buildclub_rights {
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.heading {
+    color: #fff;
+    text-align: left;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 0 0 20px;
+    font-size: 20px;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.widgetText {
+    font-size: 16px;
+}
+
+.more {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.social ul li {
+    list-style: none;
+}
+
+.social ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social ul li a::before {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 1.2em;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-right: 4px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+
+.social ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social ul li .facebook::before, .social ul li .instagram::before {
+    display: inline-block;
+    font-family: 'socicon';
+}
+
+.social ul li .facebook::before {
+    content: "\e041";
+}
+
+.social ul li .instagram::before {
+    content: "\e057";
+}
+
+.siteTitle {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0 25px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.siteTitle a {
+    font-weight: 500;
+}
+
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.bottom .designedBy a {
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.version {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.text {
+    max-width: 200px;
+}

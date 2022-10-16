@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} 
+
+.btnWrapper {
+    width: 60%;
+    margin-top: 32px;
+}

@@ -1,0 +1,115 @@
+.root {
+    margin-top: 30px;
+    display: flex;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding: 0 6px;
+        display: block;
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    max-width: 385px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .left {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .left {
+        max-width: unset;
+        widows: unset;
+        margin-right: unset;
+    }
+}
+
+.leftHeader {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 0px 0px;
+    margin-bottom: 12px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.headerTitle {
+    margin-bottom: 6px;
+}
+
+.category {
+    padding: 14px 0;
+    border-bottom: 1px solid #E2E2E2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.closeIcon {
+    cursor: pointer;
+}
+
+.leftFooter {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 784px) {
+    .right {
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+.wrapper {
+    composes: cardWrapper from '../ProductCard/productCard.css';
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.activeBorder {
+    position: absolute;
+    background: #FFC400;
+    width: 2px;
+    left: 0;
+    height: 55px;
+}
+
+.loadingWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingWrapperProducts {
+    composes: loadingWrapper;
+    height: 80%;
+}
+
+.emptyMessage {
+    text-align: center;
+}
+
+.messageForGuest {
+    margin-top: 30px;
+    text-align: center;
+}

@@ -1,0 +1,116 @@
+.addresses {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+.buttonChange {
+    width: 100%;
+    max-width: 190px;
+    margin: 0 20px;
+}
+@media screen and (max-width: 784px) {
+    .addresses {
+        max-width: 343px;
+        margin: auto;
+    }
+}
+
+.dialog {
+    max-width: 524px;
+    height: 318px;
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        max-width: 343px;
+        height: 311px;
+        border-radius: 10px;
+    }
+}
+
+.error {
+    text-align: center;
+    margin-bottom: 4rem
+}
+
+.errorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.errorContent img {
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+.buttonComponent {
+    composes: button_primary from '../../../../components/Button/button.css';
+    max-width: 180px;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.checkbox {
+    padding: 10px;
+    border: 1px solid #AEAEAE;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 21px;
+}
+
+.addNewContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 240px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.addNewContent span {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.addNewAddress {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.button {
+    max-width: 190px;
+    margin: auto;
+}
+
+@media screen and (max-width: 784px) {
+    .button {
+        max-width: 343px;
+    }
+}
+
+.loadingWrapper {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}

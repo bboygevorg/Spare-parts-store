@@ -1,0 +1,99 @@
+.typo_h1 {
+    font-size: var(--global-h1-desktop);
+    line-height: var(--global-line-height-first);
+}
+
+@media screen and (max-width: 578px) {
+    .typo_h1 {
+        font-size: var(--global-h2-desktop);
+    }
+}
+
+.typo_h2 {
+    font-size: var(--global-h2-desktop);
+    line-height: var(--global-line-height-first);
+}
+
+@media screen and (max-width: 578px) {
+    .typo_h2 {
+        font-size: var(--global-h2-mobile);
+    }
+}
+
+.typo_h3 {
+    font-size: var(--global-h3-desktop);
+    line-height: var(--global-line-height-second);
+}
+
+@media screen and (max-width: 578px) {
+    .typo_h3 {
+        font-size: var(--global-h3-mobile);
+    }
+}
+
+.typo_p {
+    font-size: var(--global-p-font-size);
+    line-height: var(--global-line-height-second);
+}
+
+@media screen and (max-width: 578px) {
+    .typo_p {
+        font-size: var(--global-px-font-size);
+    }
+}
+
+.typo_px {
+    font-size: var(--global-px-font-size);
+    line-height: var(--global-line-height-second);
+}
+
+/* @media screen and (max-width: 578px) {
+    .typo_px {
+        font-size: var(--global-pxs-font-size);
+    }
+} */
+
+.typo_pxs {
+    font-size: var(--global-pxs-font-size);
+    line-height: var(--global-line-height-second);
+}
+
+.typo_light {
+    font-family: var(--global-font-family-condensed-light);
+}
+
+.typo_condensed {
+    font-family: var(--global-font-family-condensed);
+}
+
+.typo_regular {
+    font-family: var(--global-font-family-regular);
+}
+
+.typo_bold {
+    font-family: var(--global-font-family-roboto);
+}
+
+.typo_primary {
+    color: var(--global-label-color-dark);
+}
+
+.typo_secondary {
+    color: var(--global-button-color-light);
+}
+
+.typo_error {
+    color: var(--global-error-color);
+}
+
+.typo_code {
+    color: var(--global-code-color);
+}
+
+.typo_text {
+    color: #000000;
+}
+
+.typo_darkSecondary {
+    color: #FFC900;
+}

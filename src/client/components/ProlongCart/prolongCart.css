@@ -1,0 +1,154 @@
+.modalRoot {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 784px) {
+    .modalRoot {
+        padding-top: 30px;
+    }
+}
+
+.busketIcon {
+    width: 55px;
+    height: 67px;
+}
+
+.busketIcon::before {
+    font-family: buildclub;
+    content: '\66';
+    font-size: 56px;
+    position: absolute;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .title {
+        font-size: 20px;
+        padding-top: 22px;
+    }
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    max-width: 524px;
+    font-family: 'Roboto Regular';
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 784px) {
+    .text {
+        max-width: 311px;
+        font-size: 16px;
+    }
+}
+
+.modalButtons {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 784px) {
+    .modalButtons {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+.okButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 246px;
+    max-height: 54px;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 784px) {
+    .okButton {
+        max-width: 311px;
+        max-height: 49px;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+}
+
+.extendButton {
+    composes: button_primary from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 246px;
+    max-height: 54px;
+}
+
+@media screen and (max-width: 784px) {
+    .extendButton {
+        max-width: 311px;
+        height: 49px;
+    }
+}
+
+.expiresTime {
+    position: absolute;
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 784px) {
+    .expiresTime {
+        top: 60px;
+    }
+}
+
+.radioComponent {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 333px;
+}
+
+@media screen and (max-width: 784px) {
+    .radioComponent {
+        top: 396px
+    }
+}
+
+.radioLabel {
+    font-size: var(--global-p-font-size);
+}
+
+@media screen and (max-width: 784px) {
+    .radioLabel {
+        font-size: var(--global-px-font-size);
+    }
+}

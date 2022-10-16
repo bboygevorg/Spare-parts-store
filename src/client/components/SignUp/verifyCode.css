@@ -1,0 +1,139 @@
+.root {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 28px;
+}
+
+.verifyTitle {
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    line-height: 24px; 
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 28px;
+}
+
+.about {
+    font-family: 'Roboto Regular';
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01px;
+    color: #1D1D1B;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.codeInputs {
+    width: 100%;
+    max-width: 498px;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.input_error_div {
+    display: flex; 
+    flex-direction: column;
+}
+
+.inputComponent {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    max-width: 51px;
+    height: 51px;
+    margin: 16px;
+    margin-bottom: 6px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    padding: 14px 0px 16px 21px;
+}
+
+.inputErrorComponent {
+    composes: inputComponent;
+    border: 1px solid #C20000;
+}
+
+.codeErrorMessage {
+    position: absolute;
+    color: var(--global-error-color);
+    font-family:  var(--global-font-family-regular);
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-top: 14px;
+}
+
+.loaderWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingRoot {
+    composes: root from '../Loading/loading.css';
+    transform: translate(-50%, 0%);
+}
+
+.longVerification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 29px;
+}
+
+.longVerification img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 480px;
+    letter-spacing: 0.01px;
+    line-height: 27px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding-top: 32px;
+    }
+
+    .inputComponent {
+        max-width: 30px;
+        height: 30px;
+        margin: 8px;
+        padding: 7px 11px 4px 10px;
+    }
+
+    .verifyTitle {
+        font-size: 20px;
+    }
+
+    .about {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .codeInputs {
+        max-width: 260px;
+        margin-top: 20px;
+    }
+
+    .error {
+        margin-left: 2px;
+    }
+
+}

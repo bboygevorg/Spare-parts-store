@@ -1,0 +1,20 @@
+.dialog {
+    max-width: 802px;
+    height: 391px;
+}
+
+@media screen and (max-width: 835px) {
+    .dialog {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        max-width: 343px;
+        height: 436px;
+        border-radius: 10px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}

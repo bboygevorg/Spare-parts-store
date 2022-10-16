@@ -1,0 +1,418 @@
+.root {
+    text-align: center;
+    color: #444;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2001;
+}
+
+/* .logo {
+
+} */
+
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.logo img {
+    height: 51px;
+}
+
+@media screen and  (max-width: 578px ){
+    .logo img  {
+        height: 33px;
+    }
+
+}
+
+@media screen and  (max-width: 420px ){
+    .logo img  {
+        height: 25px;
+    }
+}
+
+.zone {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 10%;
+}
+
+.topWrapper {
+    width: 100%;
+    background-color: #393939;
+}
+
+.top {
+    width: 100%;
+    max-width: 1641px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+@media screen and (max-width: 784px){
+    .top {
+        display: none;
+    }
+}
+
+.top .topMenu {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top .topMenu li {
+    list-style: none;
+    display: block;
+    margin-right: 10px;
+}
+
+.top .topMenu li a {
+    color: white;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+
+.mainBottom {
+    justify-content: center;
+}
+
+.hiddenMain {
+    display: none;
+}
+
+.contactsIconsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    position: relative;
+}
+
+.accountTrigger {
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 420px) {
+    .accountTrigger {
+        margin-right: 14px;
+    }
+}
+
+.accountTrigger::before {
+    font-family: buildclub;
+    content: "\6c";
+    font-size: 24px;
+    color: #1D1D1B;
+}
+
+@media screen and (max-width: 420px) {
+    .accountTrigger::before {
+        font-size: 18px;
+    }
+}
+
+.cart {
+    position: relative;
+    z-index: 1002;
+}
+
+.cartTrigger {
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 420px) {
+    .cartTrigger {
+        margin-right: 14px;
+    }
+}
+
+.cartTrigger::before {
+    font-family: buildclub;
+    content: "\67";
+    font-size: 24px;
+    color: #1D1D1B;
+}
+
+@media screen and (max-width: 420px) {
+    .cartTrigger::before {
+        font-size: 18px;
+    }
+}
+
+.wishlist {
+    cursor: pointer;
+}
+
+.wishlistTrigger::before {
+    font-family: buildclub;
+    content: "\68";
+    font-size: 24px;
+    color: #1D1D1B;
+}
+
+@media screen and (max-width: 420px) {
+    .wishlistTrigger::before {
+        font-size: 18px;
+    }
+}
+
+.helpIcon {
+    position: relative;
+    margin-left: 24px;
+}
+@media screen and (max-width: 784px) {
+    .helpIcon {
+        display: none;
+    }
+}
+
+.account:hover .dialogDiv {
+    display: block;
+}
+
+.language {
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 784px) {
+    .language {
+        display: none;
+    }
+}
+
+.languageMobile {
+    display: none;
+}
+
+.mobileZone {
+    display: none;
+}
+
+@media screen and (max-width: 784px) {
+    .languageMobile {
+        display: block;
+        margin-right: 12px;
+    }
+
+    .zone {
+        display: none;
+    }
+    .mobileZone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 11px;
+    }
+
+    .mobileZone span {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .languageMobile {
+        margin-right: unset;
+    }
+}
+
+.dialogDiv {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    top: 0px;
+    left: -225px;
+    padding-top: 50px;
+}
+
+.accountDialog {
+    width: 320px;
+    height: 200px;
+    box-shadow: 0px 20px 30px #00000029;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.getStarted {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.signUpButton {
+    composes: button_primary from '../../components/Button/button.css';
+    margin-top: 16px;
+    width: 280px;
+    height: 45px;
+}
+
+.signInButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    margin-top: 20px;
+    width: 280px;
+    height: 45px;
+}
+
+.countDiv {
+    position: absolute;
+    left: 18px;
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    background: #FFDC00 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+}
+
+.productCount {
+    text-align: right;
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+    opacity: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    transform: translateX(-100%);
+    /* height: 100vh; */
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2000;
+    width: 75%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* @media screen and (min-width: 785px) {
+    .menu {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 784px) {
+    .menu {
+        height: 100vh;
+    }
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menuOpen {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menuTop {
+    background: #F8F8F8;
+    padding: 18px 0 16px 16px;
+    /* margin-top: 30px; */
+    margin-bottom: 25px;
+}
+
+.menuSubHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+.hiddenMenuSubHeader {
+    display: none;
+}
+
+.menuButtonWrapper {
+    padding-bottom: 150px;
+    text-align: center;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1999;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+}
+
+.content p {
+    width: fit-content;
+}
+
+.text {
+    padding-bottom: 12px;
+}
+
+.footerLinks:hover {
+    color: var(--global-button-color-light);
+}
+
+.item {
+    padding-bottom: 12px;
+}
+
+.item:hover {
+    color: var(--global-button-color-light); 
+}
+
+.menuSignInButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 252px;
+    height: 49px;
+    margin-top: 16px;
+}
+
+.menuSignUpButton {
+    composes: button_primary from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 252px;
+    height: 49px;
+}
+
+.buttonLabel {
+    composes: button_label from '../../components/Button/button.css';
+    font-size: var(--global-px-font-size);
+}
+
+.signOutButton {
+    text-align: center;
+    padding-top: 24px;
+}

@@ -1,0 +1,164 @@
+.root {
+  margin: 0 50px;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .root {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .root {
+    display: block;
+    margin: 0;
+  }
+}
+
+.stepInfoWrapper {
+  flex: 2;
+  min-height: 680px;
+}
+
+@media screen and (max-width: 1024px) {
+  .stepInfoWrapper {
+    margin: auto;
+  }
+}
+
+.steps > div {
+  display: flex;
+}
+
+@media screen and (max-width: 784px) {
+  .steps > div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .steps {
+    max-width: 343px;
+    margin: auto;
+  }
+}
+
+.stepLeftBlock {
+  margin-right: 50px;
+}
+
+.stepTitles {
+  width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+.stepTitles img {
+    margin-right: 12px;
+  vertical-align: bottom;
+}
+.stepHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .stepHeader {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+.stepChange {
+  color: var(--global-button-color-light);
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.cartWrapper {
+}
+
+.orderTotals {
+  /* flex: 1; */
+  width: 33.3%;
+  max-width: 524px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 784px) {
+  .orderTotals {
+    max-width: 343px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.dialog {
+  max-width: 524px;
+  height: 318px;
+}
+
+@media screen and (max-width: 784px) {
+  .dialog {
+    max-width: 343px;
+    height: 311px;
+    border-radius: 10px;
+  }
+}
+
+.expireDialog {
+  max-width: 802px;
+  height: 391px;
+}
+
+@media screen and (max-width: 835px) {
+  .expireDialog {
+      max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .expireDialog {
+      max-width: 343px;
+      height: 436px;
+      border-radius: 10px;
+      padding: 0 16px;
+      box-sizing: border-box;
+  }
+}
+
+.error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loadingWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rootHidden {
+  display: none;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.courierService {
+  max-width: 524px;
+  margin: 0 auto;
+}

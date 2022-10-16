@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.rootItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rootItem a {
+  margin-left: 10px;
+}

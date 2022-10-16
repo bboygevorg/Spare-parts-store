@@ -1,0 +1,102 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    color: #1D1D1B;
+    letter-spacing: 0px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.option {
+    color: #1D1D1B;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 420px) {
+    .option {
+        font-size: var(--global-pxs-font-size);
+    }
+}
+
+.option img {
+    width: 27px;
+    height: 18px;
+}
+
+@media screen and (max-width: 420px) {
+    .option img {
+        width: 22px;
+    }
+}
+
+.option span {
+    margin-left: 6px;
+}
+
+.mainDiv {
+    font-size: var(--global-px-font-size);
+    font-family: var(--global-font-family-regular);
+    color: var(--global-label-color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+@media screen and (max-width: 420px) {
+    .mainDiv {
+        font-size: var(--global-pxs-font-size);
+        padding: 8px;
+    }
+}
+
+.mainDiv img {
+    width: 27px;
+    height: 18px;
+}
+
+@media screen and (max-width: 420px) {
+    .mainDiv img {
+        width: 22px;
+    }
+}
+
+.mainDiv span {
+    margin-left: 6px;
+}
+
+.customOptionsHidden {
+    display: none;
+}
+
+.customOptionsOpen {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+    box-sizing: border-box;
+    border-top: 0px;
+    padding: 12px 8px 0px 8px;
+    box-shadow: 0px 6px 12px #00000029;
+    top: 38px;
+    left: 2px;
+}
+
+.arrow {
+    transform: rotate(-180deg);
+}

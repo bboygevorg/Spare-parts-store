@@ -1,0 +1,98 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding-top: 50px;
+    }
+}
+
+.dialog {
+    width: 650px;
+    height: 270px;    
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        width: 95%;
+        max-width: 343px;
+        height: 310px;
+        border-radius: 10px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
+
+.yesButton {
+    composes: button_primary from '../../components/Button/button.css';
+    max-width: 246px;
+    height: 54px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 784px) {
+    .yesButton {
+        max-width: 311px;
+        height: 49px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+.noButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    max-width: 246px;
+    height: 54px;
+    width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .noButton {
+        max-width: 311px;
+        height: 49px;
+    }
+}
+
+.title {
+    padding: 0 40px 35px;
+}
+
+@media screen and (max-width: 784px) {
+    .title {
+        font-size: 20px;
+        padding: 0 16px 35px;
+    }
+}
+
+.titleSecond {
+    padding-bottom: 35px;
+}
+
+@media screen and (max-width: 784px) {
+    .titleSecond {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 784px) {
+    .actions {
+        flex-direction: column;
+    }
+}

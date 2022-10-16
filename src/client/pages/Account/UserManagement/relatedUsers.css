@@ -1,0 +1,74 @@
+.root {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 18px 32px 20px;
+    box-sizing: border-box;
+}
+
+.dialog {
+    width: 802px;
+    height: 247px;    
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1.9fr 2.3fr 1.5fr 1fr 0.5fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+}
+
+.shopAdminRow {
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)) !important;
+}
+
+.attachDialog {
+    max-width: 700px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .row {
+        grid-template-columns: 1.8fr 2.3fr 1.5fr 1.5fr 0.5fr 1.6fr;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .root {
+        padding: 18px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .dialog {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        border-radius: 4px;
+        padding: 0;
+        background-color: unset;
+    }
+
+    .dialog {
+        width: 95%;
+        max-width: 343px;
+        height: 380px;
+        border-radius: 10px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .attachDialog {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .attachDialog {
+        width: 90%;
+    }
+}

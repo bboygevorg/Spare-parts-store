@@ -1,0 +1,23 @@
+.orderDetails {
+    margin-top: 50px;
+}
+
+.orderWrapper {
+    margin-top: 30px;
+}
+
+.date {
+    letter-spacing: 0.01px;
+}
+
+.loadingWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .orderDetails {
+        margin-top: 0;
+    }
+}

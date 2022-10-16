@@ -1,0 +1,66 @@
+.block {
+    max-width: 281px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 19px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 0px 10px 20px #00000029;
+    cursor: pointer;
+}
+
+.name {
+    margin-bottom: 8px;
+}
+
+.edit {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.deleteTemplate {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.templateIcon {
+    margin-bottom: 18px;
+}
+
+
+@media screen and (max-width: 784px) {
+    .block {
+        max-width: 343px;
+        justify-self: center;
+        min-height: 167px;
+        border-radius: 4px;
+        padding: 16px 40px;
+        box-shadow: 0px 10px 20px #00000029;
+    }
+
+    .deleteTemplate {
+        top: 12px;
+        right: 12px;
+    }
+
+    .templateIcon {
+        margin-bottom: 12px;
+    }
+
+    .name {
+        margin-bottom: 4px;
+    }
+}

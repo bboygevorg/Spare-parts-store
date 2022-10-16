@@ -1,0 +1,21 @@
+.root {
+    width: 100%;
+    max-width: 1641px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1641px) {
+    .root {
+        margin: unset;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .root {
+        margin: unset;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}

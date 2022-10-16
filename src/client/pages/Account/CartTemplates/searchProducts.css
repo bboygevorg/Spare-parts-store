@@ -1,0 +1,124 @@
+.root {
+    max-height: 315px;
+    overflow: auto;
+    margin-top: 30px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.root::-webkit-scrollbar {
+    width: 2px;
+    background-color: #E2E2E2;
+}
+
+.root::-webkit-scrollbar-thumb {
+    background-color: var(--global-button-color-dark);
+    height: 150px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 0.6fr 0.7fr 1.5fr 0.6fr 0.8fr 0.5fr;
+    margin-bottom: 3px;
+    column-gap: 20px;
+}
+
+.rowData {
+    display: grid;
+    grid-template-columns: 0.6fr 0.7fr 1.5fr 0.6fr 0.8fr 0.5fr;
+    padding: 10px 0;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.imageTitle {
+    justify-self: center;
+}
+
+.pic {
+    max-width: 98px;
+    max-height: 98px;
+}
+
+.imageWrapper {
+    justify-self: center;
+}
+
+.quantityInput {
+    max-width: 118px;
+    width: 100%;
+}
+
+.quantityInput input {
+    border: 1px solid #E2E2E2;
+}
+
+.selectAll {
+    display: flex;
+}
+
+@media screen and (max-width: 1145px) {
+    .name {
+        max-width: 260px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .row {
+        grid-template-columns: 0.8fr 0.7fr 1.2fr 0.6fr 0.8fr 0.6fr;
+    }
+
+    .rowData {
+        grid-template-columns: 0.8fr 0.7fr 1.2fr 0.6fr 0.8fr 0.6fr;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin-top: 15px;
+        overflow: unset;
+        max-height: unset;
+    }
+
+    .rowData {
+        display: grid;
+        grid-template-columns: 0.1fr 0.5fr 3fr;
+        align-items: flex-start;
+        column-gap: 20px;
+        border-bottom: 1px solid #DBDBDB;
+        padding: 15px 0 12px;
+    }
+
+    .root::-webkit-scrollbar {
+        display: none;
+    }
+
+    .selectAll {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        max-width: unset;
+        white-space: unset;
+        margin-bottom: 8px;
+    }
+
+    .quantityInput {
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .rowData {    
+       column-gap: 8px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .name {
+        max-width: 130px;
+        white-space: nowrap;
+    }
+}

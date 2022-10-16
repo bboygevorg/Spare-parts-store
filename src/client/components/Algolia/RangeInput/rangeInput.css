@@ -1,0 +1,56 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .root {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .root {
+    flex-direction: row;
+  }
+}
+
+.root input {
+  width: 164px;
+}
+
+@media screen and (max-width: 1024px) {
+  .root input {
+    /* width: 16%; */
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 784px) {
+  .root input {
+    width: 40%;
+    margin-bottom: unset;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  width: 8px;
+  background: #747474;
+}
+
+@media screen and (max-width: 1024px) {
+  .separator {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 784px) {
+  .separator {
+    display: block;
+  }
+}

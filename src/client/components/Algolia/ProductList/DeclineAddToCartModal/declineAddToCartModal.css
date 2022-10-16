@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+  
+.rootItem {
+  margin-top: 20px;
+}

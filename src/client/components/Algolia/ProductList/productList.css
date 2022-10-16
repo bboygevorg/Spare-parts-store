@@ -1,0 +1,104 @@
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+  .productList {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .productList {
+    justify-content: center;
+  }
+}
+
+.paginationWrapper {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.paginationItem {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginationArrow {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+.paginationArrow svg {
+  transform: rotate(90deg);
+}
+
+.paginationItemActive {
+  background-color: var(--global-body-color);
+}
+
+.hiddenProductListWrapper {
+  display: none;
+}
+
+.dialog {
+  width: 524px !important;
+  height: 270px;
+}
+
+.loadingWrapper {
+  width: 60vw;
+  height: 50vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+.noResult {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 784px) {
+  .dialog {
+    width: 343px !important;
+    height: 214px;
+  }
+
+  .paginationItem {
+    width: 40px;
+    height: 40px;
+  }
+
+  .paginationArrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .productListWrapper {
+    overflow: auto;
+    max-height: 250px;
+    margin-top: 20px;
+  }
+
+  .productListWrapper::-webkit-scrollbar {
+    width: 2px;
+    background-color: #E2E2E2;
+  }
+
+  .productListWrapper::-webkit-scrollbar-thumb {
+    background-color: var(--global-button-color-dark);
+    height: 150px;
+  }
+}

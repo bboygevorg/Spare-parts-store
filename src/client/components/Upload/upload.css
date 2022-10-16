@@ -1,0 +1,135 @@
+.root {
+    margin-bottom: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadedImage {
+    max-width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.chooseFile {
+    position: relative;
+    composes: input from '../Input/input.css';
+    max-width: 802px;
+    width: 100%;
+    height: 51px;
+    background-color: #FFFFFF;    
+}
+
+.fileInput {
+    width: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.fileInput::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.fileInput::before {
+    content: url('./upload.svg');
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.fileInput::after {
+    content: "Upload file/s or photo/es if there are any (.pdf, .jpg, .jpeg, .png)";
+    position: absolute;
+    left: 16px;
+    color: #393939;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    cursor: pointer;
+    top: 16px;
+    white-space: normal;
+    margin-right: 40px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin-bottom: 12px;
+}
+
+.image {
+    composeS: uploadedImage;
+    margin: 0 10px;
+}
+
+.errorInputComponent {
+    border: 1px solid #C20000;
+    margin-bottom: 4px;
+}
+
+.error {
+    width: 100%;
+    line-height: 19px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+}
+
+.file p {
+    margin: 5px 20px 5px 0;
+}
+
+.closeIcon {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 784px) {
+    .uploadedImage {
+        max-width: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chooseFile {
+        max-width: 343px;
+        margin: 0 auto;
+        height: 71px;
+    }
+
+    .fileInput::after {
+        font-size: 14px;
+    }
+
+    .files {
+        max-width: 343px;
+    }
+}

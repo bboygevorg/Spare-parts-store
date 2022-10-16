@@ -1,0 +1,132 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    font-family: var(--global-font-family-regular);
+    font-size: 16px;
+    color: #1D1D1B;
+    letter-spacing: 0px;
+    border: 1px solid #AEAEAE;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: 385px;
+    width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .root {
+        max-width: 310px;
+    }
+}
+
+.rootTime {
+    composes: root;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 410px) {
+    .rootTime {
+        margin-left: unset;
+        margin-top: 20px;
+    }
+}
+
+.option {
+    color: #1D1D1B;
+    font-family: var(--global-font-family-regular);
+    font-size: var(--global-px-font-size);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+}
+
+@media screen and (max-width: 784px) {
+    .option {
+        font-size: 14px;
+    }
+}
+
+.mainDiv {
+    font-size: 16px;
+    font-family: var(--global-font-family-regular);
+    color: var(--global-label-color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 784px) {
+    .mainDiv {
+        font-size: 14px;
+    }
+}
+
+.arrow {
+    transform: rotate(-180deg);
+}
+
+.customOptionsHidden {
+    display: none;
+}
+
+.customOptionsOpen {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 8px;
+    top: 38px;
+    border: 1px solid #AEAEAE;
+    left: -1px;
+    border-top: 0;
+    width: calc(100% + 2px);
+    overflow: scroll;
+    max-height: 155px;
+}
+
+@media screen and (max-width: 784px) {
+    .customOptionsOpen {
+        max-height: 145px;
+    }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.deliveryTimeMessage {
+    width: 100%;
+    text-align: left;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 410px) {
+    .deliveryTimeMessage {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

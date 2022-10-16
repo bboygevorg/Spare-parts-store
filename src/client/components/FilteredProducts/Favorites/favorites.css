@@ -1,0 +1,123 @@
+.favoriteItemWrapper {
+  display: flex;
+  position: relative;
+  background: white;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px #e2e2e2;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.favoriteItemImage {
+  height: 114px;
+  max-width: 114px;
+  min-width: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoriteItemImage img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: 70%;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.favoriteItemDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.favoriteItemTitle {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 36px; /* Fallback for non-webkit */
+  line-height: 1.1rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.favoriteItemBtnWrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .favoriteItemBtnWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.favoriteButton {
+  composes: button_primary from "../../../components/Button/button.css";
+  width: max-content;
+  padding: 9px 17px;
+  height: 36px;
+}
+
+@media screen and (min-width: 580px) {
+  .favoriteButton {
+    width: 200px;
+    /* align-items: flex-start; */
+  }
+}
+
+.favoriteButton span {
+  font-size: 14px;
+}
+
+.quantityInput {
+  /* height: 36px; */
+  margin-right: 16px;
+}
+ 
+.quantityInput input {
+  height: 36px !important;
+  width: 112px;
+}
+@media screen and (max-width: 400px) {
+    .quantityInput {
+    margin-right: unset;
+    margin: 6px 0;
+    width: 100%;
+  }
+  .quantityInput input {
+  height: 36px !important;
+  width: 100%;
+}
+  .favoriteButton {
+    width: 100%;
+    /* align-items: flex-start; */
+  }
+}
+@media screen and (min-width: 500px) {
+    .quantityInput input { 
+    min-width: 200px;
+    }
+}
+
+.quantityInput button {
+    margin-top: 6px;    
+  /* margin: unset !important;
+  top: 7% !important; */
+}
+
+
+.closeImg::before {
+    font-family: buildclub;
+    content: "\6d";
+    font-size: var(--global-pxs-font-size);
+    cursor: pointer;
+}

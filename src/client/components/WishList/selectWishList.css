@@ -1,0 +1,72 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .root {
+        padding: 64px 16px 30px;
+    }
+}
+
+.top {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    position: relative;
+}
+
+.categoryList {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.category {
+    border: 1px solid #393939;
+    border-radius: 6px;
+    padding: 17px 30px;
+    cursor: pointer;
+}
+
+.selectedCategory {
+    composes: category;
+    border: 1px solid var(--global-button-color-light);
+}
+
+.category:hover {
+    border: 1px solid var(--global-button-color-light);
+}
+
+.category:hover .name{
+    color: var(--global-button-color-light);
+}
+
+.selectedName {
+    color: var(--global-button-color-light);
+}
+
+.loadingWrapper {
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.error {
+    text-align: center;
+    color: #C20000;
+    margin-top: 10px;
+}
+
+.addButton {
+    composes: button_primary from '../Button/button.css';
+    max-width: 258px;
+    width: 100%;
+    min-height: 72px;
+}

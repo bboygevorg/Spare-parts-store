@@ -1,0 +1,28 @@
+.body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    justify-content: space-around; 
+}
+
+.reviewOrder {
+    justify-self: start;
+    margin-left: 100px;
+}
+
+.orderSummary {
+    width: 100%;
+    max-width: 524px;
+    justify-self: end;
+    margin-right: 30px;
+}
+
+.miniCart {
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    background: transparent;
+    margin-left: 70px;
+  
+}

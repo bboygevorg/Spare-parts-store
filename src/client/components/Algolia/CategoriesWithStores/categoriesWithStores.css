@@ -1,0 +1,91 @@
+.menuSelect {
+    position: relative;
+}
+
+.menuSelectHeader {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.menuSelectHeaderTitle {
+    min-width: 120px;
+}
+/* TODO:: get icons from icon font */
+.headerIcon {
+    height: fit-content;
+    display: block;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.headerIcon > svg {
+    width: 12px;
+}
+
+.menuSelect:hover .menuSelectHeader .headerIcon {
+    transform: rotate(-180deg);
+}
+
+.menuSelect:hover .menuSelectListWrapper {
+    display: block;
+}
+
+.menuSelectListWrapper {
+    display: none;
+    padding-top: 15px;
+    width: 510px;
+    position: absolute;
+    z-index: 2003;
+}
+@media screen and (max-width: 1380px) {
+    .menuSelectListWrapper {
+        right: -15px;
+    }
+}
+
+.menuSelectList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 20px 30px #00000029;
+    border-radius: 6px;
+    padding: 0 25px;
+    max-height: 466px;
+    overflow-y: auto;
+    grid-column-gap: 40px;
+}
+
+.menuSelectItem {
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menuSelectItem span {
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
+
+.storeCats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.storeCats a {
+    display: block;
+    margin-top: 5px;
+    color: unset;
+    font-weight: 400;
+    white-space: nowrap;
+}

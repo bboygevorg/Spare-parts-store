@@ -1,0 +1,130 @@
+.root {
+    width: 100%;
+    max-width: 524px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.title {
+    letter-spacing: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.inputDiv {
+    margin-bottom: 16px;
+}
+
+.inputErrorDiv {
+    margin-bottom: 4px;
+}
+
+.inputComponent {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    max-width: 524px;
+    height: 51px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #AEAEAE;
+}
+
+.errorInputComponent {
+    composes: inputComponent;
+    border: 1px solid #C20000;
+}
+
+.signInButton {
+    composes: button_primary from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 524px;
+    height: 54px; 
+    margin-top: 14px;
+}
+
+.haveAccount {
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 14px;
+}
+
+.signUpButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    max-width: 524px;
+    margin-top: 16px;
+}
+
+.error {
+    line-height: 19px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        max-width: 343px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .emailInput {
+        max-width: 343px;
+    }
+
+    .phoneInput {
+        max-width: 343px;
+    }
+
+    .signInButton {
+        max-width: 340px;
+        margin-top: 20px;
+    }
+
+    .signUpButton {
+        max-width: 340px;
+    }
+
+}
+
+.dialog {
+    width: 100%;
+    max-width: 802px;
+    min-height: 270px;
+}
+
+@media screen and (max-width: 860px) {
+    .dialog {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        max-width: 343px;
+        border-radius: 12px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
+
+.signInError {
+    text-align: center;
+    width: 99%;
+    margin-bottom: -12px;
+}

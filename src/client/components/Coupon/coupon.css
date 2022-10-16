@@ -1,0 +1,93 @@
+.useCoupon {
+    height: auto;
+    padding: 20px 0;
+    background: var(--global-box-background);
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 32px;
+}
+
+.useCoupon h3 {
+    text-align: left;
+    font-family: var(--global-font-family-condensed);
+    font-weight: bold;
+    font-size: var(--global-h3-desktop);
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-left: 30px;
+}
+
+.enterCouponCode {
+    position: relative;
+    height: 54px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 20px;
+    margin-top: 29px;
+}
+
+.removeCouponCode {
+    position: relative;
+    height: 54px;
+    margin: 0 20px;
+    margin-top: 29px;
+}
+
+.inputError {
+    display: flex;
+    flex-direction: column;
+}
+
+.errorMessage {
+    color: var(--global-error-color);
+    font-family:  var(--global-font-family-regular);
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    padding-left: 18px;
+}
+
+.errorDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding-top: 14px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+.loaderComponent {
+    composes: ring from '../../components/Loading/loading.css';
+    bottom: 40px;
+    left: 415px;
+}
+
+.inputComponent {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    height: 54px;
+    border: 1px solid var(--global-body-color);
+}
+
+.errorInputComponent {
+    composes: inputComponent;
+    border: 1px solid #C20000;
+}
+
+.buttonApply {
+    composes: button_bordered from '../../components/Button/button.css';
+    width: 100%;
+    height: 54px;
+    margin-left: -2px;
+}
+
+.buttonRemove {
+    composes: button_primary from '../../components/Button/button.css';
+    height: 54px;
+}

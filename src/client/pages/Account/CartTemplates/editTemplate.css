@@ -1,0 +1,271 @@
+.root {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nameContent {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 16px;
+}
+
+.nameField {
+    composes: input from '../../../components/Input/input.css';
+    max-width: 524px;
+    width: 100%;
+    height: 44px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+}
+
+.action {
+    width: 40%;
+}
+
+.deleteBtn {
+    composes: button_delete from '../../../components/Button/button.css';
+    max-width: 194px;
+    height: 44px;
+}
+
+.saveBtn {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 178px;
+    height: 44px;
+    padding: 10px 20px;
+}
+
+.deleteBtn span {
+    text-transform: uppercase;
+}
+
+.saveBtn span {
+    text-transform: uppercase;
+}
+
+.searchContent {
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    row-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.primarySearch {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 119px;
+    height: 52px;
+    padding: 10px 20px;
+}
+
+.borderedSearch {
+    composes: primarySearch;
+    composes: button_bordered from '../../../components/Button/button.css';
+}
+
+.productList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-right: 12px;
+    font-size: 26px;
+}
+
+.backIcon::before {
+    font-family: buildclub;
+    content: "\72";
+} 
+
+.templateToCartBtn {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 243px;
+    height: 44px;
+    padding: 10px 30px;
+    margin-right: 1%;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.templateToCartBtn span {
+    text-transform: uppercase;
+}
+
+.editTemplateBtn {
+    composes: button_primary from '../../../components/Button/button.css';
+    max-width: 200px;
+    height: 44px;
+    padding: 10px 30px;
+    margin: 10px 0;
+}
+
+.editTemplateBtn span {
+    text-transform: uppercase;
+}
+
+.viewTop {
+    composes: top;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.editTop {
+    composes: top;
+}
+
+.goBack {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.backListIcon::before {
+    font-family: buildclub;
+    content: "\72";
+    font-size: 18px;
+}
+
+.backText {
+    color: #1D1D1B;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .actions {
+        column-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .editTop {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .actions {
+        margin-top: 20px;
+        column-gap: unset;
+        display: flex;
+    }
+
+    .deleteBtn {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        margin-top: 12px;
+    }
+
+    .nameContent {
+        row-gap: 12px;
+    }
+
+    .searchContent {
+        margin-top: 32px;
+        row-gap: 12px;
+    }
+
+    .primarySearch {
+        max-width: unset;
+        height: 49px;
+    }
+
+    .action {
+        width: unset;
+    }
+
+    .actions {
+        flex-direction: column-reverse;
+    }
+
+    .deleteBtn {
+        margin-right: unset;
+        margin-top: 24px;
+        max-width: unset;
+        height: 49px;
+    }
+
+    .saveBtn {
+        max-width: unset;
+        height: 49px;
+    }
+
+    .nameField {
+        max-width: unset;
+    }
+
+    .productList {
+        justify-content: center;
+    }
+
+    .templateToCartBtn {
+        margin-right: unset;
+    }
+
+    .goBack {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .top {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .viewTop {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .nameField {
+        max-width: unset;
+    }
+
+    .saveBtn {
+        max-width: unset;
+    }
+
+    .action {
+        margin-top: 15px;
+    }
+
+    .back {
+        margin-bottom: 20px;
+    }
+
+    .templateToCartBtn {
+        max-width: unset;
+    }
+
+    .editTemplateBtn {
+        max-width: unset;
+        margin: 0;
+    }
+}

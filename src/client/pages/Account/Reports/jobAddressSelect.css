@@ -1,0 +1,71 @@
+.root {
+    margin: 0 32px;
+    max-width: 401px;
+    width: 100%;
+    position: relative;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.addressBlock {
+    width: 100%;
+    padding: 11px 16px;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.openedBlock {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.arrowIcon {
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+.opened {
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+.list {
+    position: absolute;
+    border: 1px solid #DBDBDB;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: -1px;
+    padding: 0 20px 0 15px;
+    box-sizing: border-box;
+    max-height: 250px;
+    overflow: auto;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border-radius: 0 0 6px 6px;
+}
+
+.list::-webkit-scrollbar {
+    width: 2px;
+    background-color: #E2E2E2;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: var(--global-button-color-dark);
+    height: 150px;
+}
+
+@media screen and (max-width: 1370px) {
+    .root {
+        margin: 0;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+.root {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.title {
+    text-align: center;
+    margin: 25px ;
+}
+.InLastViewedtitle {
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 30px;
+    /*margin-bottom: -80px;*/
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    margin: auto;
+    justify-content: center;
+}
+
+.item {
+    width: 385px;
+    justify-self: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .list {
+        display: flex; 
+        flex-direction: column; 
+        grid-gap: unset;
+    }
+}
+
+.wishListEmptyDiv {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.sectionBlock {
+    margin-top: 36px;
+}

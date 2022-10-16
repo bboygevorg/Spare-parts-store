@@ -1,0 +1,125 @@
+.root {
+    position: relative;
+    max-width: 401px;
+    width: 100%;
+}
+
+.dateBlock {
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.selectedRange {
+    margin-left: 14px;
+    text-transform: capitalize;
+}
+
+.dayPicker {
+    position: absolute;
+    max-width: 401px;
+    padding: 32px 30px 27px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    outline: none;
+    margin-top: 2px;
+    z-index: 1;
+}
+
+:global(.DayPicker-wrapper) {
+    padding: 0 !important;
+    outline: none;
+}
+
+:global(.DayPicker-Day) {
+    background-color: #FFFFFF;
+    color: #1D1D1B;
+    padding: 11px 11px 9px !important;
+    margin: 5.5px;
+    border-radius: 6px !important;
+    max-width: 25px;
+    height: 42px;
+    width: 42px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Regular';
+}
+
+:global(.DayPicker-Day:hover) {
+    background: linear-gradient(271deg, #FFC400 0%, #FFDC00 100%) !important;
+    background-color: unset !important;
+}
+
+:global(.DayPicker-Day--outside:hover) {
+    background-color: #FFFFFF !important;
+    background: unset !important;
+}
+
+:global(.DayPicker-Months) {
+    outline: none;
+}
+
+:global(.DayPicker-Month) {
+    width: 100%;
+    margin: 0 !important;
+    outline: none;
+}
+
+:global(.DayPicker-Caption) {
+    padding-bottom: 16px !important;
+    box-sizing: border-box;
+    border-bottom: 1px solid #DBDBDB;
+    margin: 0 !important;
+}
+
+:global(.DayPicker-Caption div) {
+    font-size: 24px !important;
+    font-family: 'Roboto Bold';
+}
+
+:global(.DayPicker-Weekday) {
+    padding: 14px 0 2px !important;
+    font-family: 'Roboto Bold';
+    color: #1D1D1B !important;
+    font-size: 18px;
+}
+
+:global(.DayPicker-NavButton--prev) {
+    background-image: unset !important;
+    margin-right: 30px !important;
+    margin-top: 5px !important;
+    top: 0 !important;
+    right: 0 !important;
+    outline: none;
+}
+
+:global(.DayPicker-NavButton--prev::before) {
+    font-family: 'buildclub';
+    text-transform: none;
+    content: "\72";
+    color: #1D1D1B;
+}
+
+:global(.DayPicker-NavButton--next) {
+    background-image: unset !important;
+    margin-top: 5px !important;
+    top: 0 !important;
+    right: 0 !important;
+    outline: none;
+}
+
+:global(.DayPicker-NavButton--next::before) {
+    font-family: 'buildclub';
+    text-transform: none;
+    content: "\73";
+    color: #1D1D1B;
+}

@@ -1,0 +1,116 @@
+.root {
+    padding: 12px 40px;
+    position: relative;
+}
+.button_primary {
+    width: 100%;
+    background: transparent linear-gradient(270deg, var(--global-button-color-dark) 0%, var(--global-button-color-light) 100%);
+    border-radius: var(--global-border-radius-button-input);
+    opacity: 1;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+.disabledButton {
+    opacity: .7;
+}
+
+.button_primary:hover {
+    box-shadow: 0px 1px 5px var(--global-button-color-dark);
+}
+
+.button_primary:focus {
+    outline: none;
+}
+
+.button_bordered {
+    width: 100%;
+    height: 54px;
+    border-radius: var(--global-border-radius-button-input);
+    opacity: 1;
+    border: 0px;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid var(--global-button-color-light);
+    background: transparent;
+}
+
+.submittingBtn {
+    padding: 0px 63px;
+}
+
+.checkedBtn {
+    padding: 11px 75px;
+}
+
+.button_bordered:hover {
+    background: transparent linear-gradient(270deg, var(--global-button-color-dark) 0%, var(--global-button-color-light) 100%);
+}
+
+.button_bordered:focus {
+    outline: none;
+}
+
+.button_delete {
+    width: 100%;
+    height: 54px;
+    border-radius: var(--global-border-radius-button-input);
+    opacity: 1;
+    padding: 10px 29px;
+    cursor: pointer;
+    border: 1px solid var(--global-error-color);
+    background: transparent;
+}
+
+.button_delete .button_label {
+    color: var(--global-error-color);
+}
+
+.button_label {
+    font-family: var(--global-font-family-condensed);
+    font-size: var(--global-p-font-size);
+    letter-spacing: 0.01px;
+    color: var(--global-label-color-dark);
+    opacity: 1;
+    text-align: center;
+}
+
+.loading {
+    box-sizing: border-box;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border: 3px solid;
+    border-radius: 50%;
+    animation: ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) alternate;
+    border-color: #2b2a27 transparent transparent transparent;
+}
+
+.checkbox::before {
+    font-family: buildclub;
+    content: "\41";
+    font-size: 24px;
+    color: #000000;
+} 
+
+@keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.button_labelIcon {
+    composes: button_label;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonIcon {
+    margin-right: 8px;
+}

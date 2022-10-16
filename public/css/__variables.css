@@ -1,0 +1,32 @@
+:root {
+    --global-button-color-dark: #FFC400;
+    --global-button-color-light: #FFDC00;
+    --global-error-color: #C20000;
+    --global-code-color: #3e3e3e;
+    --global-label-color-dark: #1D1D1B;
+    --global-label-color-light: #393939;
+    --global-body-color: #E2E2E2;
+    --global-light-color: #F8F8F8;
+    --global-white-color: #FFFFFF;
+    --global-h1-desktop: 46px;
+    --global-h2-desktop: 32px;
+    --global-h2-mobile: 28px;
+    --global-h3-desktop: 24px;
+    --global-h3-mobile: 20px;
+    --global-p-font-size: 18px;
+    --global-px-font-size: 16px;
+    --global-pxs-font-size: 14px;
+    --global-border-radius-brand: 2px;
+    --global-border-radius-box: 4px;
+    --global-border-radius-button-input: 6px;
+    --global-border-radius-dialog: 20px;
+    --global-font-family-roboto: 'Roboto Bold';
+    --global-font-family-regular: 'Roboto Regular';
+    --global-font-family-condensed: 'Roboto Condensed';
+    --global-font-family-condensed-light: "Roboto Condensed Light";
+    --global-line-height-first: 1.2;
+    --global-line-height-second: 1.5;
+    --global-box-shadow: 0px 20px 30px #00000029;
+    --global-box-shadow-hover: 0px 40px 30px #00000029;
+    --global-box-background: #FFFFFF;
+}

@@ -1,0 +1,31 @@
+.root {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+}
+ 
+
+.getPrice_button {
+    composes: button_primary from '../../components/Button/button.css';
+    /* width: max-content; */
+    padding: 17px 12px ;
+    /* max-width: 272px; */
+    /* height: 45px;  */
+}
+ 
+.input {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+}
+
+.inputError {
+    composes: input;
+    border-color: tomato;
+}
+
+.inputWrapper {
+    width: 100%;
+}

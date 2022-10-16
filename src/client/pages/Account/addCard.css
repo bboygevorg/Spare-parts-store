@@ -1,0 +1,163 @@
+.addCardDiv {
+    text-align: center;
+    background: #F8F8F8;
+    width: 100%;
+    margin: auto;
+}
+
+.attachDetach {
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 784px) {
+    .selectMethod {
+        font-size: 28.3px;
+    }
+
+    .addCard {
+        font-size: 28px;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+    .title { 
+        max-width: 330px;
+        margin: auto;
+    }
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 17px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 784px) {
+    .inputs { 
+        padding-top: 23px;
+    }
+}
+
+.input {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    max-width: 524px;
+    height: 51px;
+    margin-top: 12px;
+    border: 1px solid #AEAEAE;
+}
+
+
+.errorInput {
+    composes: input;
+    border: 1px solid #C20000;
+}
+
+.error {
+    margin-bottom: 10px;
+}
+
+.input::placeholder {
+    color: #424770;
+}
+
+.buttons {
+    width: 100%;
+    max-width: 412px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 784px) {
+    .buttons { 
+        display: block;
+        max-width: 343px;
+    }
+}
+
+.saveButton {
+    composes: button_primary from '../../components/Button/button.css';
+    margin-right: 20px;
+    max-width: 196px;
+    width: 100%;
+    height: 48px;
+}
+
+.saveBtn {
+    composes: saveButton;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 784px) {
+    .saveButton {
+        max-width: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+        height: 49px;
+    }
+
+    .saveBtn {
+        max-width: 343px;
+    }
+}
+
+.cancelButton {
+    composes: button_bordered from '../../components/Button/button.css';
+    max-width: 196px;
+    width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+    .cancelButton {
+        max-width: unset;
+        height: 49px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .paymentIcons {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.paymentIcon {
+    margin: 10px;
+}
+
+@media screen and (max-width: 784px) {
+    .paymentIcon {
+        margin: 8px;
+    }
+}
+
+.inputLabel {
+    flex-direction: column;
+    width: max-content;
+    padding-bottom: 18px;
+    align-items: center;
+    width: 100%;
+    max-width: 524px;
+}
+
+@media screen and (max-width: 784px) {
+   .inputLabel {
+       max-width: 343px;
+   }
+}
+
+.label {
+    align-self: flex-start;
+}
+
+

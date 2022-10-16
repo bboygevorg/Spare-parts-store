@@ -1,0 +1,74 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 140px;
+    text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        padding: 60px 0 50px 0;
+    }
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.inputComponent {
+    composes: input from '../../../../components/Input/input.css';
+    width: 100%;
+    max-width: 524px;
+    height: 51px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #AEAEAE;
+    margin-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 784px) {
+    .buttons {
+        display: block;
+    }
+}
+
+.addButton {
+    composes: button_primary from '../../../../components/Button/button.css';
+    max-width: 246px;
+    width: 100%;
+    height: 54px;
+    margin-right: 31px;
+}
+
+@media screen and (max-width: 784px) {
+    .addButton {
+        max-width: 311px;
+        height: 54px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+.cancelButton {
+    composes: button_bordered from '../../../../components/Button/button.css';
+    max-width: 246px;
+    width: 100%;
+    height: 54px;
+}
+
+@media screen and (max-width: 784px) {
+    .cancelButton {
+        max-width: 311px;
+        height: 54px;
+    }
+}
+
+.hiddenInput {
+    display: none;
+}

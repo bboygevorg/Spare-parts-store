@@ -1,0 +1,186 @@
+.menuSelect {
+    position: relative;
+    margin-top: 4px;
+}
+@media screen and (max-width: 784px) {
+    .menuSelect {
+        position: unset;
+        margin-top: 4px;
+    }
+}
+.menuSelectHeader {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.dialog {
+    max-width: 524px;
+    height: 318px;
+}
+.alertMessage {
+    position: absolute;
+    bottom: -105px;
+    left: -24px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #FFDC00;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 20rem;
+}
+.alertMessage {
+    -webkit-animation: cssAnimation 5s forwards;
+    animation: cssAnimation 5s forwards;
+}
+
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.alertMessage .text {
+    font-size: 15px;
+    padding: 20px;
+}
+
+.alertMessage .zoneArrow {
+    position: absolute;
+    top: -6px;
+    height: 12px;
+    left: 27%;
+    width: 12px;
+    background-color: #FFDC00;
+    transform: rotate(46deg);
+}
+
+.messageBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.buttonComponent {
+    composes: button_primary from '../../components/Button/button.css';
+    max-width: 180px;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.menuSelectHeaderTitle {
+    /*min-width: 120px;*/
+}
+/* TODO:: get icons from icon font */
+.headerIcon {
+    height: fit-content;
+    display: block;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.headerIcon > svg {
+    width: 12px;
+}
+
+.menuSelect:hover .menuSelectHeader .headerIcon {
+    transform: rotate(-180deg);
+}
+
+.menuSelect:hover .menuSelectListWrapper {
+    display: block;
+}
+
+.menuSelectListWrapper {
+    display: none;
+    padding-top: 15px;
+    width: 200px;
+    position: absolute;
+    z-index: 2003;
+}
+@media screen and (max-width: 1380px) {
+    .menuSelectListWrapper {
+        right: -15px;
+    }
+}
+
+.menuSelectList {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 30px #00000029;
+    border-radius: 6px;
+    padding: 0 25px;
+    overflow-y: auto;
+    grid-column-gap: 40px;
+}
+
+.menuSelectItem {
+    padding: 8px 0;
+    text-align: left;
+}
+
+.menuSelectItem span {
+    display: block;
+    color: black;
+}
+
+
+.storeCats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.storeCats a {
+    display: block;
+    margin-top: 5px;
+    color: black;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 784px) {
+    .menuSelect {
+        position: unset;
+        margin-top: 4px;
+    }
+
+    .alertMessage {
+        left: -163px;
+    }
+    .alertMessage .zoneArrow {
+        left: 71%;
+    }
+
+    .menuSelectListWrapper {
+        width: 100%;
+        left: 0;
+        padding-top: 12px;
+    }
+
+    .menuSelectItem span {
+        text-align: center;
+    }
+}

@@ -1,0 +1,397 @@
+.Categories {
+  display: flex;
+  padding-top: 15px;
+}
+
+.mainContentWrapper {
+  margin-left: 30px;
+  width: 100%;
+  position: relative;
+}
+.emptySection {
+    display: flex;
+    flex-direction: column;
+}
+.searchResultInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mBottom20 {
+    margin-bottom: 20px;
+}
+
+.continueButton {
+    composes: button_primary from '../../components/Button/button.css';
+    max-width: 246px;
+    height: 54px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 784px) {
+    .continueButton {
+        max-width: 311px;
+        height: 49px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .searchResultInfo {
+        margin-top: unset;
+    }
+}
+@media screen and (max-width: 784px) {
+  .mainContentWrapper {
+    margin-left: 0;
+  }
+
+  .categoresSidebar {
+    display: none;
+  }
+}
+
+.topHeader {
+}
+
+.topHeader > h1 {
+  font: Condensed Bold 32px/43px Roboto;
+  margin-bottom: 20px;
+}
+
+.resetFilterButtonsDiv {
+  display: flex;
+  align-items: center;
+}
+
+.titleWithButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1640px) and (min-width: 1380px) {
+  .titleWithButtons {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .titleWithButtons {
+    flex-direction: column;
+  }
+
+  .titleWithButtons h1 {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .titleWithButtons {
+    padding-right: 0;
+  }
+
+}
+
+.viewButtons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 784px) {
+  .viewButtons {
+    display: none;
+  }
+}
+
+.firstViewDark svg {
+  padding: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.firstViewLight svg {
+  padding: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  fill: #a2a2a2;
+}
+
+.secondViewDark svg {
+  padding: 8px;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.secondViewLight svg {
+  padding: 8px;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  fill: #a2a2a2;
+}
+
+.resetFilters {
+  cursor: pointer;
+  padding-right: 25px;
+}
+
+.resetFilters p {
+  white-space: nowrap;
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1640px) and (min-width: 1380px) {
+  .filterWrapper {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .resetFilters {
+    display: none;
+  }
+}
+
+.sidebar {
+  min-width: 385px;
+}
+
+
+.hidden { 
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    min-width: 220px;
+  }
+}
+
+.toggles {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 1320px) {
+  .toggles {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.instantDelivery {
+  background-color: #FFFFFF;
+  max-width: 240px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  margin-right: 30px;
+  max-height: 48px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 784px) {
+  .instantDelivery {
+    padding: 12px 16px;
+  }
+}
+
+.instantDeliveryMobile {
+  composes: instantDelivery;
+  max-width: unset;
+  margin-right: unset;
+  margin-top: 10px;
+  width: unset;
+  flex-direction: row-reverse;
+}
+
+.disabled {
+  font-family: var(--global-font-family-roboto);
+  color: #A2A2A2;
+  letter-spacing: 0.01px;
+  font-size: 18px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 784px) {
+  .disabled {
+    font-size: 16px;
+  }
+}
+
+.enabled {
+  composes: disabled;
+  color: #1D1D1B;
+}
+
+@media screen and (max-width: 784px) {
+  .enabled {
+    font-size: 16px;
+  }
+}
+
+.entireCatalog {
+  composes: instantDelivery;
+  max-width: 305px;
+  margin-right: 34px;
+  margin-bottom: 20px;
+}
+
+@media screen  and (max-width: 1320px) {
+  .entireCatalog {
+    margin-right: 30px;
+  }
+}
+
+.allFilters {
+  width: 100%;
+}
+
+.fixed {
+  position: sticky;
+  top: 110px;
+  max-height: 100vh;
+  overflow: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.fixed::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  width: 100%;
+  font-size: 32px;
+}
+
+/*START MOBILE FILTER */
+
+.mobileFilters {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filterModal {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--global-light-color);
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  display: none;
+}
+
+.filterModalOpen {
+  display: block;
+}
+
+.modalFilterList {
+  /* display: none; */
+  margin-top: 20px;
+}
+/* @media screen and (max-width: 784px) {
+  .modalFilterList {
+    display: block;
+  }
+} */
+
+.filterTopHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.filterTopHeaderSubmit {
+  color: var(--global-button-color-dark);
+  cursor: pointer;
+}
+
+.clearAllWrapper {
+  box-shadow: 0px 0 6px #00000029;
+  padding: 16px;
+  background: white;
+}
+
+.clearAllBtn {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--global-button-color-dark);
+  padding: 16px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filterModalView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom: 1px solid #f8f8f8;
+  padding: 12px 20px;
+  width: 100%;
+  background: white;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.filterModalViewTitle {
+  font-size: var(--global-p-font-size);
+}
+
+.filterViewButtons {
+  display: flex;
+}
+
+.subTitleElement {
+  display: flex;
+  align-items: center;
+}
+.subTitleElement svg {
+  transform: rotate(-90deg);
+  margin-right: 10px;
+}
+.filterWithParams {
+  background-color: var( --global-body-color);
+}
+
+.filterIconWrapper {
+  display: flex;
+}
+
+.filterIconWrapper svg {
+  margin-right: 10px;
+}
+
+
+
+/*END MOBILE FILTER */

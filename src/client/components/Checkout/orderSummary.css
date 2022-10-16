@@ -1,0 +1,229 @@
+.root {
+    position: absolute;
+    width: 100%;
+    max-width: 524px;
+    height: 345px;
+}
+
+.fixedRoot {
+    position: fixed;
+    width: 31%;
+    height: 345px;
+    padding-top: 10px
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        position: static;
+        width: 100%;
+        height: auto;  
+    }
+}
+.titleWrapper {
+    padding-top: 30px;
+}
+
+.title {
+    text-align: left;
+    margin-left: 30px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.body {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding-bottom: 1px;
+}
+
+.extraNotes {
+    composes: body;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.notesInput {
+    composes: input from '../../components/Input/input.css';
+    width: 100%;
+    height: unset;
+    resize: none;
+}
+
+.priceWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 30px;
+}
+
+.text {
+    color: #1D1D1B;
+    font-size: 16px;
+}
+
+.line {
+  background: #E2E2E2;
+  height: 1px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.coupon {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.couponCode {
+    justify-self: start;
+    margin-left: 30px;
+}
+
+.removeCoupon {
+    color: #FFC400;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+.removeCouponService {
+    color: #FFC400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.couponText {
+    font-size: 16px;
+    justify-self: end;
+}
+
+.couponTextService {
+    composes: couponText;
+    margin-left: 20px;
+}
+
+.coupon div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1100px) {
+    .coupon div {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .removeCoupon {
+        margin-right: unset;
+    }
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 30px;
+   
+}
+
+.total strong {
+    color: #1D1D1B;
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.button {
+    width: 100%;
+    max-width: 524px;
+    height: 54px;
+}
+
+.dialog {
+    max-width: 524px;
+}
+
+@media screen and (max-width: 784px) {
+    .dialog {
+        max-width: 343px;
+        border-radius: 10px;
+    }
+}
+
+.policyDialog {
+    max-width: 650px;
+    height: fit-content;
+    background-color: var(--global-light-color);
+}
+
+@media screen and (max-width: 784px) {
+    .policyDialog {
+        max-width: 360px;
+        border-radius: 10px;
+    }
+}
+
+.courierSummary {
+    margin: 0 auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    max-width: 524px;
+    width: 100%;
+    padding: 21px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+
+.row p:nth-child(2) {
+    text-align: end;
+}
+
+.courierPlaceOrder {
+    max-width: 226px;
+    margin: 0 auto;
+    margin-top: 46px;
+}
+
+.couponTitleService {
+    font-family: 'Roboto Bold';
+}
+
+@media screen and (max-width: 768px) {
+    .courierPlaceOrder {
+        margin-top: 30px;
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .courierSummary {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .row p:first-child {
+        margin-bottom: 8px;
+    }
+
+    .couponTitleService {
+        margin-bottom: 8px;
+    }
+
+    .row p:nth-child(2) {
+        text-align: unset;
+    }
+}

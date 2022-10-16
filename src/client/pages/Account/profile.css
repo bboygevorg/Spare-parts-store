@@ -1,0 +1,153 @@
+.root {
+   margin-top: 30px;
+   padding-right: 30px;
+}
+
+.tabs {
+    width: 100%;
+    justify-self: center;
+}
+
+@media screen and (max-width: 784px) {
+    .root {
+        max-width: 400px;
+        margin: 20px auto;
+        padding-right: 0;
+    }
+}
+.body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .body {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        grid-gap: 12px;
+        justify-content: start;
+    }
+}
+
+.formWrapper {
+    max-width: 1100px;
+    background: #F8F8F8;
+    padding: 20px;
+}
+
+@media screen and (max-width: 784px) {
+    .formWrapper {
+       width: auto;
+    }
+}
+
+.form {
+    width: 100%;
+    justify-self: center;
+    background: #F8F8F8;
+    max-width: 400px;
+    
+    
+}
+
+.field {
+    composes: input from '../../components/Input/input.css';
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #AEAEAE;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    margin-top: 10px; 
+}
+
+.field:focus {
+    outline: none;
+}
+
+.errorField {
+    composes: field;
+    border: 1px solid #C20000;
+}
+
+.submitBtn {
+   position: relative;
+   width: 154px;
+   height: 54px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.message {
+    color: green;
+    text-align: center;
+}
+
+.backStep {
+    display: none;
+}
+
+@media screen and  (max-width: 784px) {
+    .body {
+        display: block;
+    }
+
+    .backStep {
+        display: block;
+        margin: 30px 0;
+    }
+    .submitBtn {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    .root {
+        text-align: center;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+}
+
+.error {
+    line-height: 19px;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.errorIcon {
+    width: 20px;
+    height: 18px;
+}
+
+.checkReseller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 31px;
+    margin-bottom: 17px;
+}
+
+.checkContractor {
+    composes: checkReseller;
+    margin-bottom: 10px;
+    margin-top: 31px;
+}
+
+.contractorMessage {
+    margin-bottom: 16px;
+}
+
+.errorMessage {
+    color: #C20000;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.currentRefinementsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 784px) {
+  .currentRefinementsList {
+    display: none;
+  }
+}
+
+.currentRefinementsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e2e2e2;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.closeIcon {
+  margin-left: 12px;
+}
